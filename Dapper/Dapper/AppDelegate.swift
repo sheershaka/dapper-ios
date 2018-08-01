@@ -10,6 +10,7 @@ import UIKit
 import AWSMobileClient
 import AWSCore
 import AWSPinpoint
+import AWSCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -37,6 +38,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Amazon Pinpoint is the service for push/sms notifications and general analytics
         pinpoint = AWSPinpoint(configuration:
             AWSPinpointConfiguration.defaultPinpointConfiguration(launchOptions: launchOptions))
+        
+        AWSDDLog.add(AWSDDTTYLogger.sharedInstance)
+        AWSDDLog.sharedInstance.logLevel = .info
         
         return AWSMobileClient.sharedInstance().interceptApplication(
             application, didFinishLaunchingWithOptions:

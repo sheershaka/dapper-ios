@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		92E4484E211146910072DE42 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E4484D211146910072DE42 /* main.m */; };
+		92E44851211146910072DE42 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E44850211146910072DE42 /* AppDelegate.m */; };
+		92E44854211146910072DE42 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E44853211146910072DE42 /* ViewController.m */; };
+		92E44857211146910072DE42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E44855211146910072DE42 /* Main.storyboard */; };
+		92E44859211146910072DE42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92E44858211146910072DE42 /* Assets.xcassets */; };
+		92E4485C211146910072DE42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E4485A211146910072DE42 /* LaunchScreen.storyboard */; };
+		92E44867211146910072DE42 /* DapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E44866211146910072DE42 /* DapperTests.m */; };
+		92E44872211146910072DE42 /* DapperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E44871211146910072DE42 /* DapperUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92E44863211146910072DE42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92E44841211146910072DE42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92E44848211146910072DE42;
+			remoteInfo = Dapper;
+		};
+		92E4486E211146910072DE42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92E44841211146910072DE42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92E44848211146910072DE42;
+			remoteInfo = Dapper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		92E44849211146910072DE42 /* Dapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92E4484D211146910072DE42 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		92E4484F211146910072DE42 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		92E44850211146910072DE42 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		92E44852211146910072DE42 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		92E44853211146910072DE42 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		92E44856211146910072DE42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		92E44858211146910072DE42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92E4485B211146910072DE42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		92E4485D211146910072DE42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92E44862211146910072DE42 /* DapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92E44866211146910072DE42 /* DapperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DapperTests.m; sourceTree = "<group>"; };
+		92E44868211146910072DE42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92E4486D211146910072DE42 /* DapperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DapperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92E44871211146910072DE42 /* DapperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DapperUITests.m; sourceTree = "<group>"; };
+		92E44873211146910072DE42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92E44846211146910072DE42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92E4485F211146910072DE42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92E4486A211146910072DE42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92E44840211146910072DE42 = {
+			isa = PBXGroup;
+			children = (
+				92E4484B211146910072DE42 /* Dapper */,
+				92E44865211146910072DE42 /* DapperTests */,
+				92E44870211146910072DE42 /* DapperUITests */,
+				92E4484A211146910072DE42 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		92E4484A211146910072DE42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92E44849211146910072DE42 /* Dapper.app */,
+				92E44862211146910072DE42 /* DapperTests.xctest */,
+				92E4486D211146910072DE42 /* DapperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92E4484B211146910072DE42 /* Dapper */ = {
+			isa = PBXGroup;
+			children = (
+				92E4484F211146910072DE42 /* AppDelegate.h */,
+				92E44850211146910072DE42 /* AppDelegate.m */,
+				92E44852211146910072DE42 /* ViewController.h */,
+				92E44853211146910072DE42 /* ViewController.m */,
+				92E44855211146910072DE42 /* Main.storyboard */,
+				92E44858211146910072DE42 /* Assets.xcassets */,
+				92E4485A211146910072DE42 /* LaunchScreen.storyboard */,
+				92E4485D211146910072DE42 /* Info.plist */,
+				92E4484C211146910072DE42 /* Supporting Files */,
+			);
+			path = Dapper;
+			sourceTree = "<group>";
+		};
+		92E4484C211146910072DE42 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				92E4484D211146910072DE42 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		92E44865211146910072DE42 /* DapperTests */ = {
+			isa = PBXGroup;
+			children = (
+				92E44866211146910072DE42 /* DapperTests.m */,
+				92E44868211146910072DE42 /* Info.plist */,
+			);
+			path = DapperTests;
+			sourceTree = "<group>";
+		};
+		92E44870211146910072DE42 /* DapperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				92E44871211146910072DE42 /* DapperUITests.m */,
+				92E44873211146910072DE42 /* Info.plist */,
+			);
+			path = DapperUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92E44848211146910072DE42 /* Dapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92E44876211146910072DE42 /* Build configuration list for PBXNativeTarget "Dapper" */;
+			buildPhases = (
+				92E44845211146910072DE42 /* Sources */,
+				92E44846211146910072DE42 /* Frameworks */,
+				92E44847211146910072DE42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dapper;
+			productName = Dapper;
+			productReference = 92E44849211146910072DE42 /* Dapper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92E44861211146910072DE42 /* DapperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92E44879211146910072DE42 /* Build configuration list for PBXNativeTarget "DapperTests" */;
+			buildPhases = (
+				92E4485E211146910072DE42 /* Sources */,
+				92E4485F211146910072DE42 /* Frameworks */,
+				92E44860211146910072DE42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92E44864211146910072DE42 /* PBXTargetDependency */,
+			);
+			name = DapperTests;
+			productName = DapperTests;
+			productReference = 92E44862211146910072DE42 /* DapperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		92E4486C211146910072DE42 /* DapperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92E4487C211146910072DE42 /* Build configuration list for PBXNativeTarget "DapperUITests" */;
+			buildPhases = (
+				92E44869211146910072DE42 /* Sources */,
+				92E4486A211146910072DE42 /* Frameworks */,
+				92E4486B211146910072DE42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92E4486F211146910072DE42 /* PBXTargetDependency */,
+			);
+			name = DapperUITests;
+			productName = DapperUITests;
+			productReference = 92E4486D211146910072DE42 /* DapperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92E44841211146910072DE42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Zach Dingels";
+				TargetAttributes = {
+					92E44848211146910072DE42 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					92E44861211146910072DE42 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 92E44848211146910072DE42;
+					};
+					92E4486C211146910072DE42 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 92E44848211146910072DE42;
+					};
+				};
+			};
+			buildConfigurationList = 92E44844211146910072DE42 /* Build configuration list for PBXProject "Dapper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92E44840211146910072DE42;
+			productRefGroup = 92E4484A211146910072DE42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92E44848211146910072DE42 /* Dapper */,
+				92E44861211146910072DE42 /* DapperTests */,
+				92E4486C211146910072DE42 /* DapperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92E44847211146910072DE42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92E4485C211146910072DE42 /* LaunchScreen.storyboard in Resources */,
+				92E44859211146910072DE42 /* Assets.xcassets in Resources */,
+				92E44857211146910072DE42 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92E44860211146910072DE42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92E4486B211146910072DE42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92E44845211146910072DE42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92E44854211146910072DE42 /* ViewController.m in Sources */,
+				92E44851211146910072DE42 /* AppDelegate.m in Sources */,
+				92E4484E211146910072DE42 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92E4485E211146910072DE42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92E44867211146910072DE42 /* DapperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92E44869211146910072DE42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92E44872211146910072DE42 /* DapperUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92E44864211146910072DE42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92E44848211146910072DE42 /* Dapper */;
+			targetProxy = 92E44863211146910072DE42 /* PBXContainerItemProxy */;
+		};
+		92E4486F211146910072DE42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92E44848211146910072DE42 /* Dapper */;
+			targetProxy = 92E4486E211146910072DE42 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		92E44855211146910072DE42 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92E44856211146910072DE42 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		92E4485A211146910072DE42 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92E4485B211146910072DE42 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		92E44874211146910072DE42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92E44875211146910072DE42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92E44877211146910072DE42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Dapper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dingels.Dapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		92E44878211146910072DE42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Dapper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dingels.Dapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		92E4487A211146910072DE42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DapperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dingels.DapperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dapper.app/Dapper";
+			};
+			name = Debug;
+		};
+		92E4487B211146910072DE42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DapperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dingels.DapperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dapper.app/Dapper";
+			};
+			name = Release;
+		};
+		92E4487D211146910072DE42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DapperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dingels.DapperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Dapper;
+			};
+			name = Debug;
+		};
+		92E4487E211146910072DE42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DapperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dingels.DapperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Dapper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92E44844211146910072DE42 /* Build configuration list for PBXProject "Dapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92E44874211146910072DE42 /* Debug */,
+				92E44875211146910072DE42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92E44876211146910072DE42 /* Build configuration list for PBXNativeTarget "Dapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92E44877211146910072DE42 /* Debug */,
+				92E44878211146910072DE42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		92E44879211146910072DE42 /* Build configuration list for PBXNativeTarget "DapperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92E4487A211146910072DE42 /* Debug */,
+				92E4487B211146910072DE42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		92E4487C211146910072DE42 /* Build configuration list for PBXNativeTarget "DapperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92E4487D211146910072DE42 /* Debug */,
+				92E4487E211146910072DE42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92E44841211146910072DE42 /* Project object */;
+}

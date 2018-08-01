@@ -9,12 +9,47 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AWSAuthUI-AWSAuthUI.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AWSAuthUI.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AWSCognitoIdentityProvider.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AWSCognitoIdentityProviderASF.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>AWSCore.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>AWSMobileClient.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AWSPinpoint.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AWSUserPoolsSignIn-AWSUserPoolsSignIn.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AWSUserPoolsSignIn.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,7 +77,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>00C18B5AD6117E6AAE4C354CFCDAF666</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0AB5A8AC3850B56DFA91BE3763056B81</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1585529DA784A1590EA31F3E20A317D2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1646CBD253AEDE4D9D17CE05B758F781</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1E83EF48B42863BE23D288A0D768CAED</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,7 +107,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>4AD64748DAF85E98E81A966D0637455C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4BC39106D1A223476CF73AE1BF284808</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5C31C6708BB339229F107629A095B266</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,12 +127,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6A17F44D53ECF33DCC59D6C2EA4A8B8A</key>
+		<key>6AC741B8F56A6C5819D0D45F3DFD5D4E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6AC741B8F56A6C5819D0D45F3DFD5D4E</key>
+		<key>D78D152BDACDFE093F652F4D2FF74D2E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E2867C49D313792BCCB62BF15CCB0FCD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

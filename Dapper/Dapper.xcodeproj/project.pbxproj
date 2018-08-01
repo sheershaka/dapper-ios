@@ -7,149 +7,187 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		92E4484E211146910072DE42 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E4484D211146910072DE42 /* main.m */; };
-		92E44851211146910072DE42 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E44850211146910072DE42 /* AppDelegate.m */; };
-		92E44854211146910072DE42 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E44853211146910072DE42 /* ViewController.m */; };
-		92E44857211146910072DE42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E44855211146910072DE42 /* Main.storyboard */; };
-		92E44859211146910072DE42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92E44858211146910072DE42 /* Assets.xcassets */; };
-		92E4485C211146910072DE42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E4485A211146910072DE42 /* LaunchScreen.storyboard */; };
-		92E44867211146910072DE42 /* DapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E44866211146910072DE42 /* DapperTests.m */; };
-		92E44872211146910072DE42 /* DapperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E44871211146910072DE42 /* DapperUITests.m */; };
+		09D40FE1B7116EC80603D47D /* Pods_DapperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB761BD8D0A71F07ED46E2CD /* Pods_DapperUITests.framework */; };
+		0E5E76C39414B857A614BBF8 /* Pods_Dapper_Dapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8863A7C7447F7B15BF6C64E9 /* Pods_Dapper_Dapper.framework */; };
+		618B8769375CBC453241E5C6 /* Pods_DapperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D1BFC32AD1A5C14C8959AD /* Pods_DapperTests.framework */; };
+		6540E0E7DE81E140AE29ED07 /* Pods_Dapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520EECF050ED3B20243EB637 /* Pods_Dapper.framework */; };
+		9212FC3B2112555700A31C21 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 9212FC3A2112555700A31C21 /* awsconfiguration.json */; };
+		9288676C211253D000D149E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288676B211253D000D149E2 /* AppDelegate.swift */; };
+		9288676E211253D000D149E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288676D211253D000D149E2 /* ViewController.swift */; };
+		92886771211253D000D149E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9288676F211253D000D149E2 /* Main.storyboard */; };
+		92886773211253D000D149E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92886772211253D000D149E2 /* Assets.xcassets */; };
+		92886776211253D000D149E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92886774211253D000D149E2 /* LaunchScreen.storyboard */; };
+		92886781211253D000D149E2 /* DapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92886780211253D000D149E2 /* DapperTests.swift */; };
+		9288678C211253D000D149E2 /* DapperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288678B211253D000D149E2 /* DapperUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		92E44863211146910072DE42 /* PBXContainerItemProxy */ = {
+		9288677D211253D000D149E2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 92E44841211146910072DE42 /* Project object */;
+			containerPortal = 92886760211253D000D149E2 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 92E44848211146910072DE42;
+			remoteGlobalIDString = 92886767211253D000D149E2;
 			remoteInfo = Dapper;
 		};
-		92E4486E211146910072DE42 /* PBXContainerItemProxy */ = {
+		92886788211253D000D149E2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 92E44841211146910072DE42 /* Project object */;
+			containerPortal = 92886760211253D000D149E2 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 92E44848211146910072DE42;
+			remoteGlobalIDString = 92886767211253D000D149E2;
 			remoteInfo = Dapper;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		92E44849211146910072DE42 /* Dapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		92E4484D211146910072DE42 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		92E4484F211146910072DE42 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		92E44850211146910072DE42 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		92E44852211146910072DE42 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		92E44853211146910072DE42 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		92E44856211146910072DE42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		92E44858211146910072DE42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		92E4485B211146910072DE42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		92E4485D211146910072DE42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92E44862211146910072DE42 /* DapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		92E44866211146910072DE42 /* DapperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DapperTests.m; sourceTree = "<group>"; };
-		92E44868211146910072DE42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92E4486D211146910072DE42 /* DapperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DapperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		92E44871211146910072DE42 /* DapperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DapperUITests.m; sourceTree = "<group>"; };
-		92E44873211146910072DE42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		026E1D7DEBDB06B03FE28F8D /* Pods-Dapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dapper/Pods-Dapper.debug.xcconfig"; sourceTree = "<group>"; };
+		2F29F57ECE5BDB0533AB19B6 /* Pods-Dapper-Dapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dapper-Dapper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dapper-Dapper/Pods-Dapper-Dapper.release.xcconfig"; sourceTree = "<group>"; };
+		47D0E59A740FF3A3810167F9 /* Pods-DapperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DapperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DapperUITests/Pods-DapperUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		520EECF050ED3B20243EB637 /* Pods_Dapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8605BE95D65263FA05611065 /* Pods-Dapper-Dapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dapper-Dapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dapper-Dapper/Pods-Dapper-Dapper.debug.xcconfig"; sourceTree = "<group>"; };
+		8863A7C7447F7B15BF6C64E9 /* Pods_Dapper_Dapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dapper_Dapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9212FC3A2112555700A31C21 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		92886768211253D000D149E2 /* Dapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9288676B211253D000D149E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9288676D211253D000D149E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		92886770211253D000D149E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		92886772211253D000D149E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92886775211253D000D149E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		92886777211253D000D149E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9288677C211253D000D149E2 /* DapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92886780211253D000D149E2 /* DapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DapperTests.swift; sourceTree = "<group>"; };
+		92886782211253D000D149E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92886787211253D000D149E2 /* DapperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DapperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9288678B211253D000D149E2 /* DapperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DapperUITests.swift; sourceTree = "<group>"; };
+		9288678D211253D000D149E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98D1BFC32AD1A5C14C8959AD /* Pods_DapperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DapperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6684A8B964E3756732B2DD3 /* Pods-DapperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DapperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DapperUITests/Pods-DapperUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A7B55B5D5A6A2848620C7B26 /* Pods-DapperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DapperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DapperTests/Pods-DapperTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB761BD8D0A71F07ED46E2CD /* Pods_DapperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DapperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D810961B756551C8233067BE /* Pods-DapperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DapperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DapperTests/Pods-DapperTests.release.xcconfig"; sourceTree = "<group>"; };
+		E27E8D1317051DFD4402B10C /* Pods-Dapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dapper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dapper/Pods-Dapper.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		92E44846211146910072DE42 /* Frameworks */ = {
+		92886765211253D000D149E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6540E0E7DE81E140AE29ED07 /* Pods_Dapper.framework in Frameworks */,
+				0E5E76C39414B857A614BBF8 /* Pods_Dapper_Dapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92E4485F211146910072DE42 /* Frameworks */ = {
+		92886779211253D000D149E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				618B8769375CBC453241E5C6 /* Pods_DapperTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92E4486A211146910072DE42 /* Frameworks */ = {
+		92886784211253D000D149E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09D40FE1B7116EC80603D47D /* Pods_DapperUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		92E44840211146910072DE42 = {
+		55134A2B085E4F28005C727F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				92E4484B211146910072DE42 /* Dapper */,
-				92E44865211146910072DE42 /* DapperTests */,
-				92E44870211146910072DE42 /* DapperUITests */,
-				92E4484A211146910072DE42 /* Products */,
+				026E1D7DEBDB06B03FE28F8D /* Pods-Dapper.debug.xcconfig */,
+				E27E8D1317051DFD4402B10C /* Pods-Dapper.release.xcconfig */,
+				8605BE95D65263FA05611065 /* Pods-Dapper-Dapper.debug.xcconfig */,
+				2F29F57ECE5BDB0533AB19B6 /* Pods-Dapper-Dapper.release.xcconfig */,
+				A7B55B5D5A6A2848620C7B26 /* Pods-DapperTests.debug.xcconfig */,
+				D810961B756551C8233067BE /* Pods-DapperTests.release.xcconfig */,
+				47D0E59A740FF3A3810167F9 /* Pods-DapperUITests.debug.xcconfig */,
+				A6684A8B964E3756732B2DD3 /* Pods-DapperUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9288675F211253D000D149E2 = {
+			isa = PBXGroup;
+			children = (
+				9288676A211253D000D149E2 /* Dapper */,
+				9288677F211253D000D149E2 /* DapperTests */,
+				9288678A211253D000D149E2 /* DapperUITests */,
+				92886769211253D000D149E2 /* Products */,
+				55134A2B085E4F28005C727F /* Pods */,
+				D2C22FA205D615954CA0D585 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		92E4484A211146910072DE42 /* Products */ = {
+		92886769211253D000D149E2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				92E44849211146910072DE42 /* Dapper.app */,
-				92E44862211146910072DE42 /* DapperTests.xctest */,
-				92E4486D211146910072DE42 /* DapperUITests.xctest */,
+				92886768211253D000D149E2 /* Dapper.app */,
+				9288677C211253D000D149E2 /* DapperTests.xctest */,
+				92886787211253D000D149E2 /* DapperUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		92E4484B211146910072DE42 /* Dapper */ = {
+		9288676A211253D000D149E2 /* Dapper */ = {
 			isa = PBXGroup;
 			children = (
-				92E4484F211146910072DE42 /* AppDelegate.h */,
-				92E44850211146910072DE42 /* AppDelegate.m */,
-				92E44852211146910072DE42 /* ViewController.h */,
-				92E44853211146910072DE42 /* ViewController.m */,
-				92E44855211146910072DE42 /* Main.storyboard */,
-				92E44858211146910072DE42 /* Assets.xcassets */,
-				92E4485A211146910072DE42 /* LaunchScreen.storyboard */,
-				92E4485D211146910072DE42 /* Info.plist */,
-				92E4484C211146910072DE42 /* Supporting Files */,
+				9288676B211253D000D149E2 /* AppDelegate.swift */,
+				9288676D211253D000D149E2 /* ViewController.swift */,
+				9288676F211253D000D149E2 /* Main.storyboard */,
+				92886772211253D000D149E2 /* Assets.xcassets */,
+				92886774211253D000D149E2 /* LaunchScreen.storyboard */,
+				92886777211253D000D149E2 /* Info.plist */,
+				9212FC3A2112555700A31C21 /* awsconfiguration.json */,
 			);
 			path = Dapper;
 			sourceTree = "<group>";
 		};
-		92E4484C211146910072DE42 /* Supporting Files */ = {
+		9288677F211253D000D149E2 /* DapperTests */ = {
 			isa = PBXGroup;
 			children = (
-				92E4484D211146910072DE42 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		92E44865211146910072DE42 /* DapperTests */ = {
-			isa = PBXGroup;
-			children = (
-				92E44866211146910072DE42 /* DapperTests.m */,
-				92E44868211146910072DE42 /* Info.plist */,
+				92886780211253D000D149E2 /* DapperTests.swift */,
+				92886782211253D000D149E2 /* Info.plist */,
 			);
 			path = DapperTests;
 			sourceTree = "<group>";
 		};
-		92E44870211146910072DE42 /* DapperUITests */ = {
+		9288678A211253D000D149E2 /* DapperUITests */ = {
 			isa = PBXGroup;
 			children = (
-				92E44871211146910072DE42 /* DapperUITests.m */,
-				92E44873211146910072DE42 /* Info.plist */,
+				9288678B211253D000D149E2 /* DapperUITests.swift */,
+				9288678D211253D000D149E2 /* Info.plist */,
 			);
 			path = DapperUITests;
+			sourceTree = "<group>";
+		};
+		D2C22FA205D615954CA0D585 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				520EECF050ED3B20243EB637 /* Pods_Dapper.framework */,
+				8863A7C7447F7B15BF6C64E9 /* Pods_Dapper_Dapper.framework */,
+				98D1BFC32AD1A5C14C8959AD /* Pods_DapperTests.framework */,
+				AB761BD8D0A71F07ED46E2CD /* Pods_DapperUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		92E44848211146910072DE42 /* Dapper */ = {
+		92886767211253D000D149E2 /* Dapper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92E44876211146910072DE42 /* Build configuration list for PBXNativeTarget "Dapper" */;
+			buildConfigurationList = 92886790211253D000D149E2 /* Build configuration list for PBXNativeTarget "Dapper" */;
 			buildPhases = (
-				92E44845211146910072DE42 /* Sources */,
-				92E44846211146910072DE42 /* Frameworks */,
-				92E44847211146910072DE42 /* Resources */,
+				09A98FB79FB8A18780E04B58 /* [CP] Check Pods Manifest.lock */,
+				92886764211253D000D149E2 /* Sources */,
+				92886765211253D000D149E2 /* Frameworks */,
+				92886766211253D000D149E2 /* Resources */,
+				EE8C6B587385577DC92F8AB6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,71 +195,74 @@
 			);
 			name = Dapper;
 			productName = Dapper;
-			productReference = 92E44849211146910072DE42 /* Dapper.app */;
+			productReference = 92886768211253D000D149E2 /* Dapper.app */;
 			productType = "com.apple.product-type.application";
 		};
-		92E44861211146910072DE42 /* DapperTests */ = {
+		9288677B211253D000D149E2 /* DapperTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92E44879211146910072DE42 /* Build configuration list for PBXNativeTarget "DapperTests" */;
+			buildConfigurationList = 92886793211253D000D149E2 /* Build configuration list for PBXNativeTarget "DapperTests" */;
 			buildPhases = (
-				92E4485E211146910072DE42 /* Sources */,
-				92E4485F211146910072DE42 /* Frameworks */,
-				92E44860211146910072DE42 /* Resources */,
+				DA748F3F91BE7C0EB060B768 /* [CP] Check Pods Manifest.lock */,
+				92886778211253D000D149E2 /* Sources */,
+				92886779211253D000D149E2 /* Frameworks */,
+				9288677A211253D000D149E2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				92E44864211146910072DE42 /* PBXTargetDependency */,
+				9288677E211253D000D149E2 /* PBXTargetDependency */,
 			);
 			name = DapperTests;
 			productName = DapperTests;
-			productReference = 92E44862211146910072DE42 /* DapperTests.xctest */;
+			productReference = 9288677C211253D000D149E2 /* DapperTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		92E4486C211146910072DE42 /* DapperUITests */ = {
+		92886786211253D000D149E2 /* DapperUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92E4487C211146910072DE42 /* Build configuration list for PBXNativeTarget "DapperUITests" */;
+			buildConfigurationList = 92886796211253D000D149E2 /* Build configuration list for PBXNativeTarget "DapperUITests" */;
 			buildPhases = (
-				92E44869211146910072DE42 /* Sources */,
-				92E4486A211146910072DE42 /* Frameworks */,
-				92E4486B211146910072DE42 /* Resources */,
+				DD0641CEFC19BB73671A7257 /* [CP] Check Pods Manifest.lock */,
+				92886783211253D000D149E2 /* Sources */,
+				92886784211253D000D149E2 /* Frameworks */,
+				92886785211253D000D149E2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				92E4486F211146910072DE42 /* PBXTargetDependency */,
+				92886789211253D000D149E2 /* PBXTargetDependency */,
 			);
 			name = DapperUITests;
 			productName = DapperUITests;
-			productReference = 92E4486D211146910072DE42 /* DapperUITests.xctest */;
+			productReference = 92886787211253D000D149E2 /* DapperUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		92E44841211146910072DE42 /* Project object */ = {
+		92886760211253D000D149E2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Zach Dingels";
 				TargetAttributes = {
-					92E44848211146910072DE42 = {
+					92886767211253D000D149E2 = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
 					};
-					92E44861211146910072DE42 = {
+					9288677B211253D000D149E2 = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 92E44848211146910072DE42;
+						TestTargetID = 92886767211253D000D149E2;
 					};
-					92E4486C211146910072DE42 = {
+					92886786211253D000D149E2 = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 92E44848211146910072DE42;
+						TestTargetID = 92886767211253D000D149E2;
 					};
 				};
 			};
-			buildConfigurationList = 92E44844211146910072DE42 /* Build configuration list for PBXProject "Dapper" */;
+			buildConfigurationList = 92886763211253D000D149E2 /* Build configuration list for PBXProject "Dapper" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -229,37 +270,38 @@
 				en,
 				Base,
 			);
-			mainGroup = 92E44840211146910072DE42;
-			productRefGroup = 92E4484A211146910072DE42 /* Products */;
+			mainGroup = 9288675F211253D000D149E2;
+			productRefGroup = 92886769211253D000D149E2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				92E44848211146910072DE42 /* Dapper */,
-				92E44861211146910072DE42 /* DapperTests */,
-				92E4486C211146910072DE42 /* DapperUITests */,
+				92886767211253D000D149E2 /* Dapper */,
+				9288677B211253D000D149E2 /* DapperTests */,
+				92886786211253D000D149E2 /* DapperUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		92E44847211146910072DE42 /* Resources */ = {
+		92886766211253D000D149E2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92E4485C211146910072DE42 /* LaunchScreen.storyboard in Resources */,
-				92E44859211146910072DE42 /* Assets.xcassets in Resources */,
-				92E44857211146910072DE42 /* Main.storyboard in Resources */,
+				9212FC3B2112555700A31C21 /* awsconfiguration.json in Resources */,
+				92886776211253D000D149E2 /* LaunchScreen.storyboard in Resources */,
+				92886773211253D000D149E2 /* Assets.xcassets in Resources */,
+				92886771211253D000D149E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92E44860211146910072DE42 /* Resources */ = {
+		9288677A211253D000D149E2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92E4486B211146910072DE42 /* Resources */ = {
+		92886785211253D000D149E2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -268,61 +310,139 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09A98FB79FB8A18780E04B58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dapper-Dapper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA748F3F91BE7C0EB060B768 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DapperTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD0641CEFC19BB73671A7257 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DapperUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE8C6B587385577DC92F8AB6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Dapper-Dapper/Pods-Dapper-Dapper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dapper-Dapper/Pods-Dapper-Dapper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		92E44845211146910072DE42 /* Sources */ = {
+		92886764211253D000D149E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92E44854211146910072DE42 /* ViewController.m in Sources */,
-				92E44851211146910072DE42 /* AppDelegate.m in Sources */,
-				92E4484E211146910072DE42 /* main.m in Sources */,
+				9288676E211253D000D149E2 /* ViewController.swift in Sources */,
+				9288676C211253D000D149E2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92E4485E211146910072DE42 /* Sources */ = {
+		92886778211253D000D149E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92E44867211146910072DE42 /* DapperTests.m in Sources */,
+				92886781211253D000D149E2 /* DapperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92E44869211146910072DE42 /* Sources */ = {
+		92886783211253D000D149E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92E44872211146910072DE42 /* DapperUITests.m in Sources */,
+				9288678C211253D000D149E2 /* DapperUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		92E44864211146910072DE42 /* PBXTargetDependency */ = {
+		9288677E211253D000D149E2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 92E44848211146910072DE42 /* Dapper */;
-			targetProxy = 92E44863211146910072DE42 /* PBXContainerItemProxy */;
+			target = 92886767211253D000D149E2 /* Dapper */;
+			targetProxy = 9288677D211253D000D149E2 /* PBXContainerItemProxy */;
 		};
-		92E4486F211146910072DE42 /* PBXTargetDependency */ = {
+		92886789211253D000D149E2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 92E44848211146910072DE42 /* Dapper */;
-			targetProxy = 92E4486E211146910072DE42 /* PBXContainerItemProxy */;
+			target = 92886767211253D000D149E2 /* Dapper */;
+			targetProxy = 92886788211253D000D149E2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		92E44855211146910072DE42 /* Main.storyboard */ = {
+		9288676F211253D000D149E2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				92E44856211146910072DE42 /* Base */,
+				92886770211253D000D149E2 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		92E4485A211146910072DE42 /* LaunchScreen.storyboard */ = {
+		92886774211253D000D149E2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				92E4485B211146910072DE42 /* Base */,
+				92886775211253D000D149E2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -330,7 +450,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		92E44874211146910072DE42 /* Debug */ = {
+		9288678E211253D000D149E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -375,11 +495,13 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		92E44875211146910072DE42 /* Release */ = {
+		9288678F211253D000D149E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -417,75 +539,92 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		92E44877211146910072DE42 /* Debug */ = {
+		92886791211253D000D149E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8605BE95D65263FA05611065 /* Pods-Dapper-Dapper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Dapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingels.Dapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		92E44878211146910072DE42 /* Release */ = {
+		92886792211253D000D149E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F29F57ECE5BDB0533AB19B6 /* Pods-Dapper-Dapper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Dapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingels.Dapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
-		92E4487A211146910072DE42 /* Debug */ = {
+		92886794211253D000D149E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7B55B5D5A6A2848620C7B26 /* Pods-DapperTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = DapperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingels.DapperTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dapper.app/Dapper";
 			};
 			name = Debug;
 		};
-		92E4487B211146910072DE42 /* Release */ = {
+		92886795211253D000D149E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D810961B756551C8233067BE /* Pods-DapperTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = DapperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingels.DapperTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dapper.app/Dapper";
 			};
 			name = Release;
 		};
-		92E4487D211146910072DE42 /* Debug */ = {
+		92886797211253D000D149E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47D0E59A740FF3A3810167F9 /* Pods-DapperUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = DapperUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingels.DapperUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Dapper;
 			};
 			name = Debug;
 		};
-		92E4487E211146910072DE42 /* Release */ = {
+		92886798211253D000D149E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6684A8B964E3756732B2DD3 /* Pods-DapperUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = DapperUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingels.DapperUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Dapper;
 			};
 			name = Release;
@@ -493,40 +632,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		92E44844211146910072DE42 /* Build configuration list for PBXProject "Dapper" */ = {
+		92886763211253D000D149E2 /* Build configuration list for PBXProject "Dapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				92E44874211146910072DE42 /* Debug */,
-				92E44875211146910072DE42 /* Release */,
+				9288678E211253D000D149E2 /* Debug */,
+				9288678F211253D000D149E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		92E44876211146910072DE42 /* Build configuration list for PBXNativeTarget "Dapper" */ = {
+		92886790211253D000D149E2 /* Build configuration list for PBXNativeTarget "Dapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				92E44877211146910072DE42 /* Debug */,
-				92E44878211146910072DE42 /* Release */,
+				92886791211253D000D149E2 /* Debug */,
+				92886792211253D000D149E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		92E44879211146910072DE42 /* Build configuration list for PBXNativeTarget "DapperTests" */ = {
+		92886793211253D000D149E2 /* Build configuration list for PBXNativeTarget "DapperTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				92E4487A211146910072DE42 /* Debug */,
-				92E4487B211146910072DE42 /* Release */,
+				92886794211253D000D149E2 /* Debug */,
+				92886795211253D000D149E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		92E4487C211146910072DE42 /* Build configuration list for PBXNativeTarget "DapperUITests" */ = {
+		92886796211253D000D149E2 /* Build configuration list for PBXNativeTarget "DapperUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				92E4487D211146910072DE42 /* Debug */,
-				92E4487E211146910072DE42 /* Release */,
+				92886797211253D000D149E2 /* Debug */,
+				92886798211253D000D149E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 92E44841211146910072DE42 /* Project object */;
+	rootObject = 92886760211253D000D149E2 /* Project object */;
 }

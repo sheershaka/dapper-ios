@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "92E44848211146910072DE42"
+               BlueprintIdentifier = "92886767211253D000D149E2"
                BuildableName = "Dapper.app"
                BlueprintName = "Dapper"
                ReferencedContainer = "container:Dapper.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "92E44861211146910072DE42"
+               BlueprintIdentifier = "9288677B211253D000D149E2"
                BuildableName = "DapperTests.xctest"
                BlueprintName = "DapperTests"
                ReferencedContainer = "container:Dapper.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "92E4486C211146910072DE42"
+               BlueprintIdentifier = "92886786211253D000D149E2"
                BuildableName = "DapperUITests.xctest"
                BlueprintName = "DapperUITests"
                ReferencedContainer = "container:Dapper.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "92E44848211146910072DE42"
+            BlueprintIdentifier = "92886767211253D000D149E2"
             BuildableName = "Dapper.app"
             BlueprintName = "Dapper"
             ReferencedContainer = "container:Dapper.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "92E44848211146910072DE42"
+            BlueprintIdentifier = "92886767211253D000D149E2"
             BuildableName = "Dapper.app"
             BlueprintName = "Dapper"
             ReferencedContainer = "container:Dapper.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "92E44848211146910072DE42"
+            BlueprintIdentifier = "92886767211253D000D149E2"
             BuildableName = "Dapper.app"
             BlueprintName = "Dapper"
             ReferencedContainer = "container:Dapper.xcodeproj">

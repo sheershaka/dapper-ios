@@ -186,18 +186,11 @@
 			isa = PBXGroup;
 			children = (
 				9288676B211253D000D149E2 /* AppDelegate.swift */,
-<<<<<<< HEAD
-				9240374C21161E4400B66C5F /* Model */,
-				9240374D21161E4800B66C5F /* View */,
-				9240374E21161E5000B66C5F /* Controller */,
-				9240374F21161EA100B66C5F /* Resources */,
-=======
 				9288676D211253D000D149E2 /* ViewController.swift */,
 				9288676F211253D000D149E2 /* Main.storyboard */,
 				92886772211253D000D149E2 /* Assets.xcassets */,
 				92886777211253D000D149E2 /* Info.plist */,
 				9212FC3A2112555700A31C21 /* awsconfiguration.json */,
->>>>>>> 80f93d2fffab54f0ffc4f811d0bb7b1a831c2b86
 			);
 			path = Dapper;
 			sourceTree = "<group>";
@@ -344,13 +337,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9212FC3B2112555700A31C21 /* awsconfiguration.json in Resources */,
-<<<<<<< HEAD
-				92886776211253D000D149E2 /* LaunchScreen.storyboard in Resources */,
-				924037552116213300B66C5F /* background.eps in Resources */,
-				924037562116213300B66C5F /* dapper_logo.eps in Resources */,
-				924037542116213300B66C5F /* Artboard 1.png in Resources */,
-=======
->>>>>>> 80f93d2fffab54f0ffc4f811d0bb7b1a831c2b86
 				92886773211253D000D149E2 /* Assets.xcassets in Resources */,
 				92886771211253D000D149E2 /* Main.storyboard in Resources */,
 			);

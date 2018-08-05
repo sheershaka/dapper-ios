@@ -17,17 +17,6 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-<<<<<<< HEAD
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="UIView: Root">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Artboard 1.png" translatesAutoresizingMaskIntoConstraints="NO" id="bnf-xx-QDZ" userLabel="UIImage: Background">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.45239758491516113" green="0.5993046760559082" blue="0.53008586168289185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
-=======
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Main Page">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -179,26 +168,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
->>>>>>> 80f93d2fffab54f0ffc4f811d0bb7b1a831c2b86
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gdK-2p-v4L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
-            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
-        </scene>
-    </scenes>
-    <resources>
-        <image name="Artboard 1.png" width="750" height="1334"/>
-    </resources>
-=======
             <point key="canvasLocation" x="16.800000000000001" y="122.78860569715144"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="OJw-Ud-56Y"/>
     </inferredMetricsTieBreakers>
->>>>>>> 80f93d2fffab54f0ffc4f811d0bb7b1a831c2b86
 </document>

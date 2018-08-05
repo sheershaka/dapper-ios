@@ -12,8 +12,11 @@
 		618B8769375CBC453241E5C6 /* Pods_DapperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D1BFC32AD1A5C14C8959AD /* Pods_DapperTests.framework */; };
 		6540E0E7DE81E140AE29ED07 /* Pods_Dapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520EECF050ED3B20243EB637 /* Pods_Dapper.framework */; };
 		9212FC3B2112555700A31C21 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 9212FC3A2112555700A31C21 /* awsconfiguration.json */; };
+		924037542116213300B66C5F /* Artboard 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 924037512116213300B66C5F /* Artboard 1.png */; };
+		924037552116213300B66C5F /* background.eps in Resources */ = {isa = PBXBuildFile; fileRef = 924037522116213300B66C5F /* background.eps */; };
+		924037562116213300B66C5F /* dapper_logo.eps in Resources */ = {isa = PBXBuildFile; fileRef = 924037532116213300B66C5F /* dapper_logo.eps */; };
 		9288676C211253D000D149E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288676B211253D000D149E2 /* AppDelegate.swift */; };
-		9288676E211253D000D149E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288676D211253D000D149E2 /* ViewController.swift */; };
+		9288676E211253D000D149E2 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288676D211253D000D149E2 /* LandingViewController.swift */; };
 		92886771211253D000D149E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9288676F211253D000D149E2 /* Main.storyboard */; };
 		92886773211253D000D149E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92886772211253D000D149E2 /* Assets.xcassets */; };
 		92886776211253D000D149E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92886774211253D000D149E2 /* LaunchScreen.storyboard */; };
@@ -46,9 +49,12 @@
 		8605BE95D65263FA05611065 /* Pods-Dapper-Dapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dapper-Dapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dapper-Dapper/Pods-Dapper-Dapper.debug.xcconfig"; sourceTree = "<group>"; };
 		8863A7C7447F7B15BF6C64E9 /* Pods_Dapper_Dapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dapper_Dapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9212FC3A2112555700A31C21 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		924037512116213300B66C5F /* Artboard 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Artboard 1.png"; path = "Resources/Artboard 1.png"; sourceTree = "<group>"; };
+		924037522116213300B66C5F /* background.eps */ = {isa = PBXFileReference; lastKnownFileType = file; name = background.eps; path = Resources/background.eps; sourceTree = "<group>"; };
+		924037532116213300B66C5F /* dapper_logo.eps */ = {isa = PBXFileReference; lastKnownFileType = file; name = dapper_logo.eps; path = Resources/dapper_logo.eps; sourceTree = "<group>"; };
 		92886768211253D000D149E2 /* Dapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9288676B211253D000D149E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9288676D211253D000D149E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9288676D211253D000D149E2 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		92886770211253D000D149E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92886772211253D000D149E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92886775211253D000D149E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -111,6 +117,51 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9240374C21161E4400B66C5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9240374D21161E4800B66C5F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9240374E21161E5000B66C5F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9288676D211253D000D149E2 /* LandingViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9240374F21161EA100B66C5F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				924037502116212900B66C5F /* Images */,
+				92886774211253D000D149E2 /* LaunchScreen.storyboard */,
+				9288676F211253D000D149E2 /* Main.storyboard */,
+				92886772211253D000D149E2 /* Assets.xcassets */,
+				92886777211253D000D149E2 /* Info.plist */,
+				9212FC3A2112555700A31C21 /* awsconfiguration.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		924037502116212900B66C5F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				924037512116213300B66C5F /* Artboard 1.png */,
+				924037522116213300B66C5F /* background.eps */,
+				924037532116213300B66C5F /* dapper_logo.eps */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		9288675F211253D000D149E2 = {
 			isa = PBXGroup;
 			children = (
@@ -137,12 +188,10 @@
 			isa = PBXGroup;
 			children = (
 				9288676B211253D000D149E2 /* AppDelegate.swift */,
-				9288676D211253D000D149E2 /* ViewController.swift */,
-				9288676F211253D000D149E2 /* Main.storyboard */,
-				92886772211253D000D149E2 /* Assets.xcassets */,
-				92886774211253D000D149E2 /* LaunchScreen.storyboard */,
-				92886777211253D000D149E2 /* Info.plist */,
-				9212FC3A2112555700A31C21 /* awsconfiguration.json */,
+				9240374C21161E4400B66C5F /* Model */,
+				9240374D21161E4800B66C5F /* View */,
+				9240374E21161E5000B66C5F /* Controller */,
+				9240374F21161EA100B66C5F /* Resources */,
 			);
 			path = Dapper;
 			sourceTree = "<group>";
@@ -289,6 +338,9 @@
 			files = (
 				9212FC3B2112555700A31C21 /* awsconfiguration.json in Resources */,
 				92886776211253D000D149E2 /* LaunchScreen.storyboard in Resources */,
+				924037552116213300B66C5F /* background.eps in Resources */,
+				924037562116213300B66C5F /* dapper_logo.eps in Resources */,
+				924037542116213300B66C5F /* Artboard 1.png in Resources */,
 				92886773211253D000D149E2 /* Assets.xcassets in Resources */,
 				92886771211253D000D149E2 /* Main.storyboard in Resources */,
 			);
@@ -404,7 +456,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9288676E211253D000D149E2 /* ViewController.swift in Sources */,
+				9288676E211253D000D149E2 /* LandingViewController.swift in Sources */,
 				9288676C211253D000D149E2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

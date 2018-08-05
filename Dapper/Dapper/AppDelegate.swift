@@ -35,6 +35,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         didFinishLaunchingWithOptions launchOptions:
         [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        let didFinishLaunching = AWSMobileClient.sharedInstance().interceptApplication(
+            application, didFinishLaunchingWithOptions:
+            launchOptions)
         // Amazon Pinpoint is the service for push/sms notifications and general analytics
         pinpoint = AWSPinpoint(configuration:
             AWSPinpointConfiguration.defaultPinpointConfiguration(launchOptions: launchOptions))
@@ -42,9 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AWSDDLog.add(AWSDDTTYLogger.sharedInstance)
         AWSDDLog.sharedInstance.logLevel = .info
         
-        return AWSMobileClient.sharedInstance().interceptApplication(
-            application, didFinishLaunchingWithOptions:
-            launchOptions)
+        return didFinishLaunching
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

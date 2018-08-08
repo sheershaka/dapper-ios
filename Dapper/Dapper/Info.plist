@@ -21,7 +21,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
-	<string>Main</string>
+	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -41,40 +41,38 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-</dict>
-<!-- Google Start-->
-<key>CFBundleURLTypes</key>
-<array>
-    <dict>
-    <key>CFBundleURLSchemes</key>
-    <array>
-        <string>com.googleusercontent.apps.66212038607-i3v7q3a7q6aim8f6auebvdrdn3bbc8db</string>
-    </array>
-    </dict>
-</array>
-<!-- Google End -->
-<!-- Facebook Start -->
-<dict>
-<key>FacebookAppID</key>
-<string>655938481471267</string>
-<key>FacebookDisplayName</key>
-<string>Dapper App</string>
-<key>LSApplicationQueriesSchemes</key>
-<array>
-    <string>fbapi</string>
-    <string>fb-messenger-api</string>
-    <string>fbauth2</string>
-    <string>fbshareextension</string>
-</array>
-<key>CFBundleURLTypes</key>
-<array>
-    <dict>
-        <key>CFBundleURLSchemes</key>
-        <array>
-            <string>fb655938481471267</string>
-        </array>
-    </dict>
-</array>
-</dict>
-<!-- Facebook End-->
+	<!-- Google Start-->
+	<key>CFBundleURLTypes</key>
+	<array>
+    	<dict>
+    		<key>CFBundleURLSchemes</key>
+    		<array>
+        		<string>com.googleusercontent.apps.66212038607-i3v7q3a7q6aim8f6auebvdrdn3bbc8db</string>
+    		</array>
+    	</dict>
+	</array>
+	<!-- Google End -->
+	<!-- Facebook Start -->
+	<key>FacebookAppID</key>
+	<string>655938481471267</string>
+	<key>FacebookDisplayName</key>
+	<string>Dapper App</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+	    <string>fbapi</string>
+	    <string>fb-messenger-api</string>
+	    <string>fbauth2</string>
+	    <string>fbshareextension</string>
+	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+	    <dict>
+	        <key>CFBundleURLSchemes</key>
+	        <array>
+	            <string>fb655938481471267</string>
+	        </array>
+	    </dict>
+	</array>
+	<!-- Facebook End-->
+	</dict>
 </plist>

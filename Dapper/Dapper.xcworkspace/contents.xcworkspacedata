@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Dapper/awsconfiguration.json">
-   </FileRef>
-   <FileRef
       location = "group:Dapper.xcodeproj">
    </FileRef>
    <FileRef

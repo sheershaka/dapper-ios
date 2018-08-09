@@ -14,6 +14,7 @@
 		618B8769375CBC453241E5C6 /* Pods_DapperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D1BFC32AD1A5C14C8959AD /* Pods_DapperTests.framework */; };
 		6540E0E7DE81E140AE29ED07 /* Pods_Dapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520EECF050ED3B20243EB637 /* Pods_Dapper.framework */; };
 		9212FC3B2112555700A31C21 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 9212FC3A2112555700A31C21 /* awsconfiguration.json */; };
+		9220F8C7211BE6760046ACCA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9220F8C6211BE6760046ACCA /* Constants.swift */; };
 		9288676C211253D000D149E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288676B211253D000D149E2 /* AppDelegate.swift */; };
 		9288676E211253D000D149E2 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288676D211253D000D149E2 /* LandingViewController.swift */; };
 		92886771211253D000D149E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9288676F211253D000D149E2 /* Main.storyboard */; };
@@ -41,20 +42,21 @@
 
 /* Begin PBXFileReference section */
 		026E1D7DEBDB06B03FE28F8D /* Pods-Dapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dapper/Pods-Dapper.debug.xcconfig"; sourceTree = "<group>"; };
-		1E4A3B8F2117729C0090CFCB /* Artboard 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 1.png"; sourceTree = "<group>"; };
+		1E4A3B8F2117729C0090CFCB /* Artboard 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Artboard 1.png"; path = "../../Resources/Images/Artboard 1.png"; sourceTree = "<group>"; };
 		1E4A3B902117729C0090CFCB /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		2F29F57ECE5BDB0533AB19B6 /* Pods-Dapper-Dapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dapper-Dapper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dapper-Dapper/Pods-Dapper-Dapper.release.xcconfig"; sourceTree = "<group>"; };
 		47D0E59A740FF3A3810167F9 /* Pods-DapperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DapperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DapperUITests/Pods-DapperUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		520EECF050ED3B20243EB637 /* Pods_Dapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8605BE95D65263FA05611065 /* Pods-Dapper-Dapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dapper-Dapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dapper-Dapper/Pods-Dapper-Dapper.debug.xcconfig"; sourceTree = "<group>"; };
 		8863A7C7447F7B15BF6C64E9 /* Pods_Dapper_Dapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dapper_Dapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9212FC3A2112555700A31C21 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		9212FC3A2112555700A31C21 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = awsconfiguration.json; path = ../Resources/awsconfiguration.json; sourceTree = "<group>"; };
+		9220F8C6211BE6760046ACCA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../Resources/Constants.swift; sourceTree = "<group>"; };
 		92886768211253D000D149E2 /* Dapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9288676B211253D000D149E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9288676D211253D000D149E2 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		92886770211253D000D149E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		92886772211253D000D149E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		92886777211253D000D149E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92886772211253D000D149E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Resources/Images/Assets.xcassets; sourceTree = "<group>"; };
+		92886777211253D000D149E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Dapper/Resources/Info.plist; sourceTree = SOURCE_ROOT; };
 		9288677C211253D000D149E2 /* DapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92886780211253D000D149E2 /* DapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DapperTests.swift; sourceTree = "<group>"; };
 		92886782211253D000D149E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -113,6 +115,51 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9220F8C1211BE5130046ACCA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9288676F211253D000D149E2 /* Main.storyboard */,
+				92886777211253D000D149E2 /* Info.plist */,
+				9212FC3A2112555700A31C21 /* awsconfiguration.json */,
+				9220F8C6211BE6760046ACCA /* Constants.swift */,
+				9220F8C5211BE54F0046ACCA /* Images */,
+			);
+			name = Resources;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		9220F8C2211BE51D0046ACCA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9288676D211253D000D149E2 /* LandingViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9220F8C3211BE5240046ACCA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E4A3B902117729C0090CFCB /* GradientView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9220F8C4211BE5280046ACCA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9220F8C5211BE54F0046ACCA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1E4A3B8F2117729C0090CFCB /* Artboard 1.png */,
+				92886772211253D000D149E2 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		9288675F211253D000D149E2 = {
 			isa = PBXGroup;
 			children = (
@@ -139,13 +186,10 @@
 			isa = PBXGroup;
 			children = (
 				9288676B211253D000D149E2 /* AppDelegate.swift */,
-				9288676D211253D000D149E2 /* LandingViewController.swift */,
-				9288676F211253D000D149E2 /* Main.storyboard */,
-				1E4A3B8F2117729C0090CFCB /* Artboard 1.png */,
-				1E4A3B902117729C0090CFCB /* GradientView.swift */,
-				92886772211253D000D149E2 /* Assets.xcassets */,
-				92886777211253D000D149E2 /* Info.plist */,
-				9212FC3A2112555700A31C21 /* awsconfiguration.json */,
+				9220F8C4211BE5280046ACCA /* Model */,
+				9220F8C3211BE5240046ACCA /* View */,
+				9220F8C2211BE51D0046ACCA /* Controller */,
+				9220F8C1211BE5130046ACCA /* Resources */,
 			);
 			path = Dapper;
 			sourceTree = "<group>";
@@ -444,6 +488,7 @@
 				9288676E211253D000D149E2 /* LandingViewController.swift in Sources */,
 				9288676C211253D000D149E2 /* AppDelegate.swift in Sources */,
 				1E4A3B922117729D0090CFCB /* GradientView.swift in Sources */,
+				9220F8C7211BE6760046ACCA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +530,7 @@
 				92886770211253D000D149E2 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -605,7 +651,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A6GX7QAV5J;
-				INFOPLIST_FILE = Dapper/Info.plist;
+				INFOPLIST_FILE = Dapper/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingels.Dapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -622,7 +668,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A6GX7QAV5J;
-				INFOPLIST_FILE = Dapper/Info.plist;
+				INFOPLIST_FILE = Dapper/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingels.Dapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";

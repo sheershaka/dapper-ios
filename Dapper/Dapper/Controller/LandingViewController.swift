@@ -21,9 +21,9 @@ class LandingViewController: UIViewController {
         
         // Check if AWS SignInManager is connected
         if !AWSSignInManager.sharedInstance().isLoggedIn {
-            print("User signed in")
+            print("User connected to AWS")
         } else {
-            print("User not signed in")
+            print("User did not connect to AWS")
         }
     }
 

@@ -9,14 +9,15 @@
 import UIKit
 import AWSMobileClient
 import AWSCore
-import AWSPinpoint
-import AWSCore
+import AWSCognitoIdentityProvider
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
-    var pinpoint: AWSPinpoint?
+    var serviceConfiguration: AWSServiceConfiguration!
+    var pool: AWSCognitoIdentityUserPool!
+    var currentUser: AWSCognitoIdentityUser!
 
     // Add a AWSMobileClient call in application:open url
     func application(_ application: UIApplication, open url: URL,
@@ -35,17 +36,51 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         didFinishLaunchingWithOptions launchOptions:
         [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let didFinishLaunching = AWSMobileClient.sharedInstance().interceptApplication(
+        // Configure AWS
+        self.serviceConfiguration = AWSServiceConfiguration.init(region: AWSRegionType.USWest2, credentialsProvider: nil)
+        if self.serviceConfiguration == nil {
+            print("Error connecting to AWS: cannot initialize serviceConfiguration")
+        }
+        
+        initUserPool()
+        
+        // setInitialView()
+        
+        // Logging, use to test if AWS is connecting
+        //AWSDDLog.add(AWSDDTTYLogger.sharedInstance)
+        //AWSDDLog.sharedInstance.logLevel = .verbose
+        
+        return AWSMobileClient.sharedInstance().interceptApplication(
             application, didFinishLaunchingWithOptions:
             launchOptions)
-        // Amazon Pinpoint is the service for push/sms notifications and general analytics
-        pinpoint = AWSPinpoint(configuration:
-            AWSPinpointConfiguration.defaultPinpointConfiguration(launchOptions: launchOptions))
+    }
+    
+    func initUserPool() {
+        let configuration = AWSCognitoIdentityUserPoolConfiguration.init(clientId: CONST.CLIENT_ID, clientSecret: CONST.CLIENT_SECRET, poolId: CONST.POOL_ID)
+        AWSCognitoIdentityUserPool.register(with: self.serviceConfiguration, userPoolConfiguration: configuration, forKey: "UserPool")
+        self.pool = AWSCognitoIdentityUserPool(forKey: "UserPool")
+        if self.pool == nil {
+            print("Error connecting to AWS: cannot initialize User Pool")
+        }
+    }
+    
+    func setInitialView() {
         
-        AWSDDLog.add(AWSDDTTYLogger.sharedInstance)
-        AWSDDLog.sharedInstance.logLevel = .info
-        
-        return didFinishLaunching
+        //        self.window = UIWindow(frame: UIScreen.main.bounds)
+        //        let storyboard = UIStoryboard(name: "MainStoryboard", bundle: nil)
+        //        let viewController = storyboard.instantiateViewController(withIdentifier: <#T##String#>)
+        //
+        //        // Assume user is logged in
+        //        var secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "secondViewController") as! secondViewController
+        //
+        //        self.currentUser = pool.currentUser()
+        //        if self.currentUser == nil {
+        //            // This will run if the currentUser() is nil aka not logged in
+        //            self.storyboard?.instantiateViewController(withIdentifier: "secondViewController") as! secondViewController
+        //        }
+        //
+        //        self.window?.rootViewController = viewController
+        //        self.window?.makeKeyAndVisible()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

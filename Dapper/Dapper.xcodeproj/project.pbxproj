@@ -1,0 +1,787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09D40FE1B7116EC80603D47D /* Pods_DapperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB761BD8D0A71F07ED46E2CD /* Pods_DapperUITests.framework */; };
+		0E5E76C39414B857A614BBF8 /* Pods_Dapper_Dapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8863A7C7447F7B15BF6C64E9 /* Pods_Dapper_Dapper.framework */; };
+		1E4A3B912117729D0090CFCB /* Artboard 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E4A3B8F2117729C0090CFCB /* Artboard 1.png */; };
+		1E4A3B922117729D0090CFCB /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4A3B902117729C0090CFCB /* GradientView.swift */; };
+		618B8769375CBC453241E5C6 /* Pods_DapperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D1BFC32AD1A5C14C8959AD /* Pods_DapperTests.framework */; };
+		6540E0E7DE81E140AE29ED07 /* Pods_Dapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520EECF050ED3B20243EB637 /* Pods_Dapper.framework */; };
+		9212FC3B2112555700A31C21 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 9212FC3A2112555700A31C21 /* awsconfiguration.json */; };
+		9220F8C7211BE6760046ACCA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9220F8C6211BE6760046ACCA /* Constants.swift */; };
+		924B005D211D182500CCDCF2 /* AWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B005C211D182500CCDCF2 /* AWS.swift */; };
+		924B005F211D281A00CCDCF2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B005E211D281A00CCDCF2 /* SignUpViewController.swift */; };
+		9288676C211253D000D149E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288676B211253D000D149E2 /* AppDelegate.swift */; };
+		9288676E211253D000D149E2 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288676D211253D000D149E2 /* LandingViewController.swift */; };
+		92886771211253D000D149E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9288676F211253D000D149E2 /* Main.storyboard */; };
+		92886773211253D000D149E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92886772211253D000D149E2 /* Assets.xcassets */; };
+		92886781211253D000D149E2 /* DapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92886780211253D000D149E2 /* DapperTests.swift */; };
+		9288678C211253D000D149E2 /* DapperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288678B211253D000D149E2 /* DapperUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9288677D211253D000D149E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92886760211253D000D149E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92886767211253D000D149E2;
+			remoteInfo = Dapper;
+		};
+		92886788211253D000D149E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92886760211253D000D149E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92886767211253D000D149E2;
+			remoteInfo = Dapper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		026E1D7DEBDB06B03FE28F8D /* Pods-Dapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dapper/Pods-Dapper.debug.xcconfig"; sourceTree = "<group>"; };
+		1E4A3B8F2117729C0090CFCB /* Artboard 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Artboard 1.png"; path = "../../Resources/Images/Artboard 1.png"; sourceTree = "<group>"; };
+		1E4A3B902117729C0090CFCB /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		2F29F57ECE5BDB0533AB19B6 /* Pods-Dapper-Dapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dapper-Dapper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dapper-Dapper/Pods-Dapper-Dapper.release.xcconfig"; sourceTree = "<group>"; };
+		47D0E59A740FF3A3810167F9 /* Pods-DapperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DapperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DapperUITests/Pods-DapperUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		520EECF050ED3B20243EB637 /* Pods_Dapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8605BE95D65263FA05611065 /* Pods-Dapper-Dapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dapper-Dapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dapper-Dapper/Pods-Dapper-Dapper.debug.xcconfig"; sourceTree = "<group>"; };
+		8863A7C7447F7B15BF6C64E9 /* Pods_Dapper_Dapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dapper_Dapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9212FC3A2112555700A31C21 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		9220F8C6211BE6760046ACCA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		924B005C211D182500CCDCF2 /* AWS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWS.swift; sourceTree = "<group>"; };
+		924B005E211D281A00CCDCF2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		92886768211253D000D149E2 /* Dapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9288676B211253D000D149E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9288676D211253D000D149E2 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		92886770211253D000D149E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		92886772211253D000D149E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Resources/Images/Assets.xcassets; sourceTree = "<group>"; };
+		92886777211253D000D149E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9288677C211253D000D149E2 /* DapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92886780211253D000D149E2 /* DapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DapperTests.swift; sourceTree = "<group>"; };
+		92886782211253D000D149E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92886787211253D000D149E2 /* DapperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DapperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9288678B211253D000D149E2 /* DapperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DapperUITests.swift; sourceTree = "<group>"; };
+		9288678D211253D000D149E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98D1BFC32AD1A5C14C8959AD /* Pods_DapperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DapperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6684A8B964E3756732B2DD3 /* Pods-DapperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DapperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DapperUITests/Pods-DapperUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A7B55B5D5A6A2848620C7B26 /* Pods-DapperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DapperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DapperTests/Pods-DapperTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB761BD8D0A71F07ED46E2CD /* Pods_DapperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DapperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D810961B756551C8233067BE /* Pods-DapperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DapperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DapperTests/Pods-DapperTests.release.xcconfig"; sourceTree = "<group>"; };
+		E27E8D1317051DFD4402B10C /* Pods-Dapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dapper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dapper/Pods-Dapper.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92886765211253D000D149E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6540E0E7DE81E140AE29ED07 /* Pods_Dapper.framework in Frameworks */,
+				0E5E76C39414B857A614BBF8 /* Pods_Dapper_Dapper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92886779211253D000D149E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				618B8769375CBC453241E5C6 /* Pods_DapperTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92886784211253D000D149E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09D40FE1B7116EC80603D47D /* Pods_DapperUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55134A2B085E4F28005C727F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				026E1D7DEBDB06B03FE28F8D /* Pods-Dapper.debug.xcconfig */,
+				E27E8D1317051DFD4402B10C /* Pods-Dapper.release.xcconfig */,
+				8605BE95D65263FA05611065 /* Pods-Dapper-Dapper.debug.xcconfig */,
+				2F29F57ECE5BDB0533AB19B6 /* Pods-Dapper-Dapper.release.xcconfig */,
+				A7B55B5D5A6A2848620C7B26 /* Pods-DapperTests.debug.xcconfig */,
+				D810961B756551C8233067BE /* Pods-DapperTests.release.xcconfig */,
+				47D0E59A740FF3A3810167F9 /* Pods-DapperUITests.debug.xcconfig */,
+				A6684A8B964E3756732B2DD3 /* Pods-DapperUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9220F8C1211BE5130046ACCA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9288676F211253D000D149E2 /* Main.storyboard */,
+				92886777211253D000D149E2 /* Info.plist */,
+				9212FC3A2112555700A31C21 /* awsconfiguration.json */,
+				9220F8C6211BE6760046ACCA /* Constants.swift */,
+				9220F8C5211BE54F0046ACCA /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9220F8C2211BE51D0046ACCA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9288676D211253D000D149E2 /* LandingViewController.swift */,
+				924B005E211D281A00CCDCF2 /* SignUpViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9220F8C3211BE5240046ACCA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E4A3B902117729C0090CFCB /* GradientView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9220F8C4211BE5280046ACCA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				924B005C211D182500CCDCF2 /* AWS.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9220F8C5211BE54F0046ACCA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1E4A3B8F2117729C0090CFCB /* Artboard 1.png */,
+				92886772211253D000D149E2 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		9288675F211253D000D149E2 = {
+			isa = PBXGroup;
+			children = (
+				9288676A211253D000D149E2 /* Dapper */,
+				9288677F211253D000D149E2 /* DapperTests */,
+				9288678A211253D000D149E2 /* DapperUITests */,
+				92886769211253D000D149E2 /* Products */,
+				55134A2B085E4F28005C727F /* Pods */,
+				D2C22FA205D615954CA0D585 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		92886769211253D000D149E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92886768211253D000D149E2 /* Dapper.app */,
+				9288677C211253D000D149E2 /* DapperTests.xctest */,
+				92886787211253D000D149E2 /* DapperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9288676A211253D000D149E2 /* Dapper */ = {
+			isa = PBXGroup;
+			children = (
+				9288676B211253D000D149E2 /* AppDelegate.swift */,
+				9220F8C4211BE5280046ACCA /* Model */,
+				9220F8C3211BE5240046ACCA /* View */,
+				9220F8C2211BE51D0046ACCA /* Controller */,
+				9220F8C1211BE5130046ACCA /* Resources */,
+			);
+			path = Dapper;
+			sourceTree = "<group>";
+		};
+		9288677F211253D000D149E2 /* DapperTests */ = {
+			isa = PBXGroup;
+			children = (
+				92886780211253D000D149E2 /* DapperTests.swift */,
+				92886782211253D000D149E2 /* Info.plist */,
+			);
+			path = DapperTests;
+			sourceTree = "<group>";
+		};
+		9288678A211253D000D149E2 /* DapperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9288678B211253D000D149E2 /* DapperUITests.swift */,
+				9288678D211253D000D149E2 /* Info.plist */,
+			);
+			path = DapperUITests;
+			sourceTree = "<group>";
+		};
+		D2C22FA205D615954CA0D585 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				520EECF050ED3B20243EB637 /* Pods_Dapper.framework */,
+				8863A7C7447F7B15BF6C64E9 /* Pods_Dapper_Dapper.framework */,
+				98D1BFC32AD1A5C14C8959AD /* Pods_DapperTests.framework */,
+				AB761BD8D0A71F07ED46E2CD /* Pods_DapperUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92886767211253D000D149E2 /* Dapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92886790211253D000D149E2 /* Build configuration list for PBXNativeTarget "Dapper" */;
+			buildPhases = (
+				09A98FB79FB8A18780E04B58 /* [CP] Check Pods Manifest.lock */,
+				92886764211253D000D149E2 /* Sources */,
+				92886765211253D000D149E2 /* Frameworks */,
+				92886766211253D000D149E2 /* Resources */,
+				D51B0787D932D03E26030EA8 /* [CP] Embed Pods Frameworks */,
+				622C20DB00091F4C292A531F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dapper;
+			productName = Dapper;
+			productReference = 92886768211253D000D149E2 /* Dapper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9288677B211253D000D149E2 /* DapperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92886793211253D000D149E2 /* Build configuration list for PBXNativeTarget "DapperTests" */;
+			buildPhases = (
+				DA748F3F91BE7C0EB060B768 /* [CP] Check Pods Manifest.lock */,
+				92886778211253D000D149E2 /* Sources */,
+				92886779211253D000D149E2 /* Frameworks */,
+				9288677A211253D000D149E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9288677E211253D000D149E2 /* PBXTargetDependency */,
+			);
+			name = DapperTests;
+			productName = DapperTests;
+			productReference = 9288677C211253D000D149E2 /* DapperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		92886786211253D000D149E2 /* DapperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92886796211253D000D149E2 /* Build configuration list for PBXNativeTarget "DapperUITests" */;
+			buildPhases = (
+				DD0641CEFC19BB73671A7257 /* [CP] Check Pods Manifest.lock */,
+				92886783211253D000D149E2 /* Sources */,
+				92886784211253D000D149E2 /* Frameworks */,
+				92886785211253D000D149E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92886789211253D000D149E2 /* PBXTargetDependency */,
+			);
+			name = DapperUITests;
+			productName = DapperUITests;
+			productReference = 92886787211253D000D149E2 /* DapperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92886760211253D000D149E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Zach Dingels";
+				TargetAttributes = {
+					92886767211253D000D149E2 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = A6GX7QAV5J;
+						ProvisioningStyle = Automatic;
+					};
+					9288677B211253D000D149E2 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 92886767211253D000D149E2;
+					};
+					92886786211253D000D149E2 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 92886767211253D000D149E2;
+					};
+				};
+			};
+			buildConfigurationList = 92886763211253D000D149E2 /* Build configuration list for PBXProject "Dapper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9288675F211253D000D149E2;
+			productRefGroup = 92886769211253D000D149E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92886767211253D000D149E2 /* Dapper */,
+				9288677B211253D000D149E2 /* DapperTests */,
+				92886786211253D000D149E2 /* DapperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92886766211253D000D149E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9212FC3B2112555700A31C21 /* awsconfiguration.json in Resources */,
+				1E4A3B912117729D0090CFCB /* Artboard 1.png in Resources */,
+				92886773211253D000D149E2 /* Assets.xcassets in Resources */,
+				92886771211253D000D149E2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9288677A211253D000D149E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92886785211253D000D149E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09A98FB79FB8A18780E04B58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dapper-Dapper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		622C20DB00091F4C292A531F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Dapper-Dapper/Pods-Dapper-Dapper-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dapper-Dapper/Pods-Dapper-Dapper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D51B0787D932D03E26030EA8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Dapper-Dapper/Pods-Dapper-Dapper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthUI/AWSAuthUI.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSFacebookSignIn/AWSFacebookSignIn.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSPinpoint/AWSPinpoint.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSUserPoolsSignIn/AWSUserPoolsSignIn.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProviderASF.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSFacebookSignIn.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSPinpoint.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSUserPoolsSignIn.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dapper-Dapper/Pods-Dapper-Dapper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA748F3F91BE7C0EB060B768 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DapperTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD0641CEFC19BB73671A7257 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DapperUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92886764211253D000D149E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924B005F211D281A00CCDCF2 /* SignUpViewController.swift in Sources */,
+				9288676E211253D000D149E2 /* LandingViewController.swift in Sources */,
+				9288676C211253D000D149E2 /* AppDelegate.swift in Sources */,
+				1E4A3B922117729D0090CFCB /* GradientView.swift in Sources */,
+				924B005D211D182500CCDCF2 /* AWS.swift in Sources */,
+				9220F8C7211BE6760046ACCA /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92886778211253D000D149E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92886781211253D000D149E2 /* DapperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92886783211253D000D149E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9288678C211253D000D149E2 /* DapperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9288677E211253D000D149E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92886767211253D000D149E2 /* Dapper */;
+			targetProxy = 9288677D211253D000D149E2 /* PBXContainerItemProxy */;
+		};
+		92886789211253D000D149E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92886767211253D000D149E2 /* Dapper */;
+			targetProxy = 92886788211253D000D149E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9288676F211253D000D149E2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92886770211253D000D149E2 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9288678E211253D000D149E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9288678F211253D000D149E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92886791211253D000D149E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8605BE95D65263FA05611065 /* Pods-Dapper-Dapper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6GX7QAV5J;
+				INFOPLIST_FILE = Dapper/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dingels.Dapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		92886792211253D000D149E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F29F57ECE5BDB0533AB19B6 /* Pods-Dapper-Dapper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6GX7QAV5J;
+				INFOPLIST_FILE = Dapper/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dingels.Dapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		92886794211253D000D149E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7B55B5D5A6A2848620C7B26 /* Pods-DapperTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DapperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dingels.DapperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dapper.app/Dapper";
+			};
+			name = Debug;
+		};
+		92886795211253D000D149E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D810961B756551C8233067BE /* Pods-DapperTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DapperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dingels.DapperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dapper.app/Dapper";
+			};
+			name = Release;
+		};
+		92886797211253D000D149E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47D0E59A740FF3A3810167F9 /* Pods-DapperUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DapperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dingels.DapperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Dapper;
+			};
+			name = Debug;
+		};
+		92886798211253D000D149E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6684A8B964E3756732B2DD3 /* Pods-DapperUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DapperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dingels.DapperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Dapper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92886763211253D000D149E2 /* Build configuration list for PBXProject "Dapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9288678E211253D000D149E2 /* Debug */,
+				9288678F211253D000D149E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92886790211253D000D149E2 /* Build configuration list for PBXNativeTarget "Dapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92886791211253D000D149E2 /* Debug */,
+				92886792211253D000D149E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92886793211253D000D149E2 /* Build configuration list for PBXNativeTarget "DapperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92886794211253D000D149E2 /* Debug */,
+				92886795211253D000D149E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92886796211253D000D149E2 /* Build configuration list for PBXNativeTarget "DapperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92886797211253D000D149E2 /* Debug */,
+				92886798211253D000D149E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92886760211253D000D149E2 /* Project object */;
+}

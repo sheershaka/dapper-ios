@@ -15,6 +15,8 @@
 		6540E0E7DE81E140AE29ED07 /* Pods_Dapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520EECF050ED3B20243EB637 /* Pods_Dapper.framework */; };
 		9212FC3B2112555700A31C21 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 9212FC3A2112555700A31C21 /* awsconfiguration.json */; };
 		9220F8C7211BE6760046ACCA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9220F8C6211BE6760046ACCA /* Constants.swift */; };
+		924B005B211D168B00CCDCF2 /* UserPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B005A211D168B00CCDCF2 /* UserPool.swift */; };
+		924B005D211D182500CCDCF2 /* AWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B005C211D182500CCDCF2 /* AWS.swift */; };
 		9288676C211253D000D149E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288676B211253D000D149E2 /* AppDelegate.swift */; };
 		9288676E211253D000D149E2 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288676D211253D000D149E2 /* LandingViewController.swift */; };
 		92886771211253D000D149E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9288676F211253D000D149E2 /* Main.storyboard */; };
@@ -51,6 +53,8 @@
 		8863A7C7447F7B15BF6C64E9 /* Pods_Dapper_Dapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dapper_Dapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9212FC3A2112555700A31C21 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		9220F8C6211BE6760046ACCA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		924B005A211D168B00CCDCF2 /* UserPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPool.swift; sourceTree = "<group>"; };
+		924B005C211D182500CCDCF2 /* AWS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWS.swift; sourceTree = "<group>"; };
 		92886768211253D000D149E2 /* Dapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9288676B211253D000D149E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9288676D211253D000D149E2 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +150,8 @@
 		9220F8C4211BE5280046ACCA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				924B005A211D168B00CCDCF2 /* UserPool.swift */,
+				924B005C211D182500CCDCF2 /* AWS.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -487,6 +493,8 @@
 				9288676E211253D000D149E2 /* LandingViewController.swift in Sources */,
 				9288676C211253D000D149E2 /* AppDelegate.swift in Sources */,
 				1E4A3B922117729D0090CFCB /* GradientView.swift in Sources */,
+				924B005D211D182500CCDCF2 /* AWS.swift in Sources */,
+				924B005B211D168B00CCDCF2 /* UserPool.swift in Sources */,
 				9220F8C7211BE6760046ACCA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

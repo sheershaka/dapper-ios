@@ -37,12 +37,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         // Configure AWS
-        self.serviceConfiguration = AWSServiceConfiguration.init(region: AWSRegionType.USWest2, credentialsProvider: nil)
-        if self.serviceConfiguration == nil {
+        serviceConfiguration = AWSServiceConfiguration.init(region: AWSRegionType.USWest2, credentialsProvider: nil)
+        if serviceConfiguration == nil {
             print("Error connecting to AWS: cannot initialize serviceConfiguration")
         }
         
-        initUserPool()
+        AWS.shared.setAWSServiceConfiguration(config: serviceConfiguration)
         
         setInitialView()
         
@@ -55,22 +55,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             launchOptions)
     }
     
-    func initUserPool() {
-        let configuration = AWSCognitoIdentityUserPoolConfiguration.init(clientId: CONST.CLIENT_ID, clientSecret: CONST.CLIENT_SECRET, poolId: CONST.POOL_ID)
-        AWSCognitoIdentityUserPool.register(with: self.serviceConfiguration, userPoolConfiguration: configuration, forKey: "UserPool")
-        self.pool = AWSCognitoIdentityUserPool(forKey: "UserPool")
-        if self.pool == nil {
-            print("Error connecting to AWS: cannot initialize User Pool")
-        }
-    }
-    
     func setInitialView() {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        var viewController = storyboard.instantiateViewController(withIdentifier: "homeVC")
+        var viewController = storyboard.instantiateViewController(withIdentifier: "home")
 
-        if pool.currentUser() == nil {
+        if AWS.shared.pool!.currentUser() == nil {
             // This will run if the currentUser() is nil aka not logged in
             viewController = storyboard.instantiateViewController(withIdentifier: "landingVC") as UIViewController
         }

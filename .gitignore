@@ -22,7 +22,7 @@ build/
 *.xcuserdata/*
 
 ## Hide developer accounts in PList
-Dapper/Resources/Info.plist
+Dapper/Dapper/Resources/Info.plist
 
 ## Other
 *.xccheckout

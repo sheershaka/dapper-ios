@@ -21,6 +21,9 @@ build/
 
 *.xcuserdata/*
 
+## Hide developer accounts in PList
+Info.plist
+
 ## Other
 *.xccheckout
 *.moved-aside

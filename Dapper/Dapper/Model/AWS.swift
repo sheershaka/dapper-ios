@@ -5,6 +5,8 @@
 //  Created by Zach Dingels on 8/9/18.
 //  Copyright © 2018 Zach Dingels. All rights reserved.
 //
+// The point of this class is to make it so important AWS objects can be accessed
+// from anywhere in the app.
 
 import Foundation
 

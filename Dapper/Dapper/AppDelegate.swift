@@ -61,6 +61,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         var viewController = storyboard.instantiateViewController(withIdentifier: "homeVC")
 
+        print(AWS.shared.pool!.currentUser()!.deviceId)
+        
         if AWS.shared.pool!.currentUser() == nil {
             // This will run if the currentUser() is nil aka not logged in
             print("Is logged in")

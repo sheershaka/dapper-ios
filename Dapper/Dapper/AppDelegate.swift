@@ -44,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         initUserPool()
         
-        // setInitialView()
+        setInitialView()
         
         // Logging, use to test if AWS is connecting
         //AWSDDLog.add(AWSDDTTYLogger.sharedInstance)
@@ -66,21 +66,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func setInitialView() {
         
-        //        self.window = UIWindow(frame: UIScreen.main.bounds)
-        //        let storyboard = UIStoryboard(name: "MainStoryboard", bundle: nil)
-        //        let viewController = storyboard.instantiateViewController(withIdentifier: <#T##String#>)
-        //
-        //        // Assume user is logged in
-        //        var secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "secondViewController") as! secondViewController
-        //
-        //        self.currentUser = pool.currentUser()
-        //        if self.currentUser == nil {
-        //            // This will run if the currentUser() is nil aka not logged in
-        //            self.storyboard?.instantiateViewController(withIdentifier: "secondViewController") as! secondViewController
-        //        }
-        //
-        //        self.window?.rootViewController = viewController
-        //        self.window?.makeKeyAndVisible()
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        var viewController = storyboard.instantiateViewController(withIdentifier: "homeVC")
+
+        if pool.currentUser() == nil {
+            // This will run if the currentUser() is nil aka not logged in
+            viewController = storyboard.instantiateViewController(withIdentifier: "landingVC") as UIViewController
+        }
+
+        self.window?.rootViewController = viewController
+        self.window?.makeKeyAndVisible()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

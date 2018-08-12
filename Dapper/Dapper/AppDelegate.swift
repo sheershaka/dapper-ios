@@ -62,12 +62,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var viewController = storyboard.instantiateViewController(withIdentifier: "homeVC")
 
         print(AWS.shared.pool!.currentUser()!.deviceId)
-        
-        if AWS.shared.pool!.currentUser() == nil {
-            // This will run if the currentUser() is nil aka not logged in
-            print("Is logged in")
-            viewController = storyboard.instantiateViewController(withIdentifier: "landingVC") as UIViewController
-        }
+
 
         self.window?.rootViewController = viewController
         self.window?.makeKeyAndVisible()

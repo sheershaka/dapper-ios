@@ -145,10 +145,10 @@
             </objects>
             <point key="canvasLocation" x="38" y="-150"/>
         </scene>
-        <!--View Controller-->
+        <!--Log In View Controller-->
         <scene sceneID="paf-X1-MXz">
             <objects>
-                <viewController storyboardIdentifier="loginVC" id="y8C-YJ-cEe" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginVC" id="y8C-YJ-cEe" customClass="LogInViewController" customModule="Dapper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RRJ-mP-7gd"/>
                         <viewControllerLayoutGuide type="bottom" id="IoF-3S-wIM"/>
@@ -183,6 +183,9 @@
                                 <rect key="frame" x="164" y="286" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="y8C-YJ-cEe" eventType="touchDown" id="zqk-k5-GlX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dp2-dg-OzA">
                                 <rect key="frame" x="121" y="363" width="132" height="30"/>
@@ -195,6 +198,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="oeP-am-9n4" id="d8z-jj-W3I"/>
+                        <outlet property="usernameTextField" destination="QCk-i8-XxJ" id="x6A-q1-Dao"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gdK-2p-v4L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -234,6 +241,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="mAn-4h-XzF"/>
-        <segue reference="OJw-Ud-56Y"/>
+        <segue reference="tWb-8l-vim"/>
     </inferredMetricsTieBreakers>
 </document>

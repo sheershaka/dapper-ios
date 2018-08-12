@@ -17,6 +17,7 @@
 		9220F8C7211BE6760046ACCA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9220F8C6211BE6760046ACCA /* Constants.swift */; };
 		924B005D211D182500CCDCF2 /* AWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B005C211D182500CCDCF2 /* AWS.swift */; };
 		924B005F211D281A00CCDCF2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B005E211D281A00CCDCF2 /* SignUpViewController.swift */; };
+		924B0061211D413200CCDCF2 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B0060211D413200CCDCF2 /* LogInViewController.swift */; };
 		9288676C211253D000D149E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288676B211253D000D149E2 /* AppDelegate.swift */; };
 		9288676E211253D000D149E2 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288676D211253D000D149E2 /* LandingViewController.swift */; };
 		92886771211253D000D149E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9288676F211253D000D149E2 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 		9220F8C6211BE6760046ACCA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		924B005C211D182500CCDCF2 /* AWS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWS.swift; sourceTree = "<group>"; };
 		924B005E211D281A00CCDCF2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		924B0060211D413200CCDCF2 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		92886768211253D000D149E2 /* Dapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9288676B211253D000D149E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9288676D211253D000D149E2 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			children = (
 				9288676D211253D000D149E2 /* LandingViewController.swift */,
 				924B005E211D281A00CCDCF2 /* SignUpViewController.swift */,
+				924B0060211D413200CCDCF2 /* LogInViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -239,8 +242,8 @@
 				92886764211253D000D149E2 /* Sources */,
 				92886765211253D000D149E2 /* Frameworks */,
 				92886766211253D000D149E2 /* Resources */,
-				D51B0787D932D03E26030EA8 /* [CP] Embed Pods Frameworks */,
-				622C20DB00091F4C292A531F /* [CP] Copy Pods Resources */,
+				2E5DC2F15C876745780C2036 /* [CP] Embed Pods Frameworks */,
+				FFF0CC23A8901F067DA6B74B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -383,25 +386,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		622C20DB00091F4C292A531F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Dapper-Dapper/Pods-Dapper-Dapper-resources.sh",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dapper-Dapper/Pods-Dapper-Dapper-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D51B0787D932D03E26030EA8 /* [CP] Embed Pods Frameworks */ = {
+		2E5DC2F15C876745780C2036 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -483,6 +468,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FFF0CC23A8901F067DA6B74B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Dapper-Dapper/Pods-Dapper-Dapper-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dapper-Dapper/Pods-Dapper-Dapper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -493,6 +496,7 @@
 				924B005F211D281A00CCDCF2 /* SignUpViewController.swift in Sources */,
 				9288676E211253D000D149E2 /* LandingViewController.swift in Sources */,
 				9288676C211253D000D149E2 /* AppDelegate.swift in Sources */,
+				924B0061211D413200CCDCF2 /* LogInViewController.swift in Sources */,
 				1E4A3B922117729D0090CFCB /* GradientView.swift in Sources */,
 				924B005D211D182500CCDCF2 /* AWS.swift in Sources */,
 				9220F8C7211BE6760046ACCA /* Constants.swift in Sources */,

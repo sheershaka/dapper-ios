@@ -15,9 +15,7 @@ import AWSCognitoIdentityProvider
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-    var serviceConfiguration: AWSServiceConfiguration!
-    var pool: AWSCognitoIdentityUserPool!
-    var currentUser: AWSCognitoIdentityUser!
+    var storyboard: UIStoryboard?
 
     // Add a AWSMobileClient call in application:open url
     func application(_ application: UIApplication, open url: URL,
@@ -36,36 +34,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         didFinishLaunchingWithOptions launchOptions:
         [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        self.storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
         // Configure AWS
-        serviceConfiguration = AWSServiceConfiguration.init(region: AWSRegionType.USWest2, credentialsProvider: nil)
+        let serviceConfiguration = AWSServiceConfiguration.init(region: CONST.AWS.REGION, credentialsProvider: nil)
         if serviceConfiguration == nil {
             print("Error connecting to AWS: cannot initialize serviceConfiguration")
         }
-        
-        AWS.shared.setAWSServiceConfiguration(config: serviceConfiguration)
-        
-        setInitialView()
-        
         // Logging, use to test if AWS is connecting
-        //AWSDDLog.add(AWSDDTTYLogger.sharedInstance)
-        //AWSDDLog.sharedInstance.logLevel = .verbose
+        AWSDDLog.add(AWSDDTTYLogger.sharedInstance)
+        AWSDDLog.sharedInstance.logLevel = .verbose
         
-        return AWSMobileClient.sharedInstance().interceptApplication(
-            application, didFinishLaunchingWithOptions:
-            launchOptions)
-    }
-    
-    func setInitialView() {
+        // Set the AWS user pool.
+        AWS.shared.setAWSServiceConfiguration(config: serviceConfiguration!)
+        AWS.shared.pool?.delegate = self
+        // When getDetails() is called, it will trigger LoginViewController's
+        // getDetails() function. If a user is not signed in it will also call
+        // startPasswordAuthentication(). 
+        AWS.shared.currentUser?.getDetails()
         
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        var viewController = storyboard.instantiateViewController(withIdentifier: "homeVC")
-
-        print(AWS.shared.pool!.currentUser()!.deviceId)
-
-
-        self.window?.rootViewController = viewController
-        self.window?.makeKeyAndVisible()
+        return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -93,3 +81,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+
+extension AppDelegate: AWSCognitoIdentityInteractiveAuthenticationDelegate {
+    // This function is called whenever we try and use AWSCognito and we don't have a
+    // user logged in. So, inside the function is code to show the login view controller
+    func startPasswordAuthentication() -> AWSCognitoIdentityPasswordAuthentication {
+        print("called-startPasswordAuthentication")
+        let loginVC = self.storyboard?.instantiateViewController(withIdentifier: "loginVC") as! LogInViewController
+        self.window?.rootViewController = loginVC
+        self.window?.makeKeyAndVisible()
+        
+        return loginVC
+    }
+    
+    // AWS Cognito has different states for user accounts. One state is that the
+    // user needs to change their password. This is the default state for users
+    // created on the AWS website When a user tries to log on and their
+    // account is in the "change password" state this function gets called.
+    // We shouldn't need to worry about this because users will be signing up
+    // on the app, not the AWS website. Notice that if you try and log in
+    // using the username and password of one of the accounts made on AWS
+    // this function gets called.
+    func startNewPasswordRequired() -> AWSCognitoIdentityNewPasswordRequired {
+        print("called-startNewPassword")
+        return self.storyboard?.instantiateViewController(withIdentifier: "loginVC") as! LogInViewController as! AWSCognitoIdentityNewPasswordRequired
+    }
+}

@@ -40,9 +40,17 @@ final class AWS {
     }
     
     func initalizePool(config: AWSServiceConfiguration) {
-        let configuration = AWSCognitoIdentityUserPoolConfiguration.init(clientId: CONST.CLIENT_ID, clientSecret: CONST.CLIENT_SECRET, poolId: CONST.POOL_ID)
-        AWSCognitoIdentityUserPool.register(with: config, userPoolConfiguration: configuration, forKey: "UserPool")
-        self.pool = AWSCognitoIdentityUserPool(forKey: "UserPool")
+        let configuration = AWSCognitoIdentityUserPoolConfiguration.init(
+            clientId: CONST.AWS.COGNITO.CLIENT_ID,
+            clientSecret: CONST.AWS.COGNITO.CLIENT_SECRET,
+            poolId: CONST.AWS.COGNITO.POOL_ID)
+        
+        AWSCognitoIdentityUserPool.register(
+            with: config,
+            userPoolConfiguration: configuration,
+            forKey: CONST.AWS.COGNITO.POOL_NAME)
+        
+        self.pool = AWSCognitoIdentityUserPool(forKey: CONST.AWS.COGNITO.POOL_NAME)
         
         if self.pool == nil {
             print("Error connecting to AWS: cannot initialize User Pool")

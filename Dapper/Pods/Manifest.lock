@@ -26,6 +26,14 @@ PODS:
   - Bolts/AppLinks (1.9.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.9.0)
+  - FacebookCore (0.3.2):
+    - Bolts (~> 1.8)
+    - FBSDKCoreKit (~> 4.35)
+  - FacebookLogin (0.3.2):
+    - Bolts (~> 1.8)
+    - FacebookCore (~> 0.3.2)
+    - FBSDKCoreKit (~> 4.35)
+    - FBSDKLoginKit (~> 4.35)
   - FBSDKCoreKit (4.35.0):
     - Bolts (~> 1.7)
   - FBSDKLoginKit (4.35.0):
@@ -57,6 +65,8 @@ DEPENDENCIES:
   - AWSMobileClient (~> 2.6.13)
   - AWSPinpoint (~> 2.6.13)
   - AWSUserPoolsSignIn (~> 2.6.13)
+  - FacebookCore
+  - FacebookLogin
   - GoogleSignIn (~> 4.0)
 
 SPEC REPOS:
@@ -71,6 +81,8 @@ SPEC REPOS:
     - AWSPinpoint
     - AWSUserPoolsSignIn
     - Bolts
+    - FacebookCore
+    - FacebookLogin
     - FBSDKCoreKit
     - FBSDKLoginKit
     - GoogleSignIn
@@ -89,6 +101,8 @@ SPEC CHECKSUMS:
   AWSPinpoint: c7c985dc5242c3fd716aa0a099ce7ba2a535fc5a
   AWSUserPoolsSignIn: dfc849bcd5f965248ec8bb11c37e640bede7e377
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  FacebookCore: fe93222bb70346730ef33b061d493e9e7a7cb1f5
+  FacebookLogin: a4e225974791c82836765a294582b4778baffc07
   FBSDKCoreKit: 1a5b2e3ceb5ca827a53c54aa5f4a3480efff80d2
   FBSDKLoginKit: 00a3d65d1226852f9d76dcddff01981e5e6d9c38
   GoogleSignIn: d9ef55b10f0aa401a5de2747f59b725e4b9732ac
@@ -96,6 +110,6 @@ SPEC CHECKSUMS:
   GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
   GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
 
-PODFILE CHECKSUM: 4c490d44062c81d922e3ec59cc5a85b55ce6ad94
+PODFILE CHECKSUM: 438168027567fe30e3b2824060343a166d511a92
 
 COCOAPODS: 1.5.2

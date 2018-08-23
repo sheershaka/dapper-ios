@@ -13,6 +13,7 @@ import Foundation
 import AWSMobileClient
 import AWSCore
 import AWSCognitoIdentityProvider
+import FacebookCore
 
 final class AWS {
     
@@ -57,5 +58,16 @@ final class AWS {
         } else {
             self.currentUser = self.pool!.getUser()
         }
+    }
+    
+}
+
+class FacebookProvider: NSObject, AWSIdentityProviderManager {
+    func logins() -> AWSTask<NSDictionary> {
+        print("called FB provider")
+        if let token = AccessToken.current?.authenticationToken {
+            return AWSTask(result: [AWSIdentityProviderFacebook:token])
+        }
+        return AWSTask(error:NSError(domain: "Facebook Login", code: -1 , userInfo: ["Facebook" : "No current Facebook access token"]))
     }
 }

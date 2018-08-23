@@ -13,19 +13,30 @@ import AWSAuthCore
 import AWSAuthUI
 import AWSMobileClient
 import AWSCognitoIdentityProvider
+import FacebookLogin
+import FacebookCore
+
 
 class LogInViewController: UIViewController {
+    
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     var passwordAuthenticationCompletion: AWSTaskCompletionSource<AWSCognitoIdentityPasswordAuthenticationDetails>?
     
     override func viewDidLoad() {
+        let loginButton = LoginButton(readPermissions: [ .publicProfile, .email ])
+        loginButton.delegate = self
+        loginButton.center = view.center
+        
+        view.addSubview(loginButton)
+        
         super.viewDidLoad()
     }
     
     
     @IBAction func loginButtonPressed(_ sender: Any) {
+        print("Hello")
         let fieldsAreNonEmpty: Bool = !(usernameTextField.text?.isEmpty)! && !(passwordTextField.text?.isEmpty)!
         if (fieldsAreNonEmpty) {
             let authDetails = AWSCognitoIdentityPasswordAuthenticationDetails(username: usernameTextField.text!, password: passwordTextField.text!)
@@ -68,5 +79,20 @@ extension LogInViewController: AWSCognitoIdentityPasswordAuthentication {
                 self.present(alertController, animated: true, completion:  nil)
             }
         }
+    }
+}
+    
+extension LogInViewController: LoginButtonDelegate {
+    func loginButtonDidCompleteLogin(_ loginButton: LoginButton, result: LoginResult) {
+       print("done")
+        AWSServiceManager.default().defaultServiceConfiguration.credentialsProvider.credentials().continueWith(block: { (task) -> Any? in
+                print(task.result ?? "nil")
+                return task
+        })
+        
+    }
+    
+    func loginButtonDidLogOut(_ loginButton: LoginButton) {
+        print("didn't log in")
     }
 }

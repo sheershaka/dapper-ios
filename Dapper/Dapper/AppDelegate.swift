@@ -10,6 +10,7 @@ import UIKit
 import AWSMobileClient
 import AWSCore
 import AWSCognitoIdentityProvider
+import FBSDKLoginKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -33,27 +34,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions:
         [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
         self.storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        // Configure AWS
-        let serviceConfiguration = AWSServiceConfiguration.init(region: CONST.AWS.REGION, credentialsProvider: nil)
-        if serviceConfiguration == nil {
-            print("Error connecting to AWS: cannot initialize serviceConfiguration")
-        }
+        let fbProvider = FacebookProvider()
+    
+        let credentialsProvider = AWSCognitoCredentialsProvider(regionType: CONST.AWS.REGION, identityPoolId: CONST.AWS.COGNITO.IDENTITY_POOL_ID, identityProviderManager: fbProvider)
+        let configuration = AWSServiceConfiguration(region: CONST.AWS.REGION, credentialsProvider: credentialsProvider)
+        AWSServiceManager.default().defaultServiceConfiguration = configuration
+        
         // Logging, use to test if AWS is connecting
         AWSDDLog.add(AWSDDTTYLogger.sharedInstance)
         AWSDDLog.sharedInstance.logLevel = .verbose
         
         // Set the AWS user pool.
-        AWS.shared.setAWSServiceConfiguration(config: serviceConfiguration!)
+        AWS.shared.setAWSServiceConfiguration(config: configuration!)
         AWS.shared.pool?.delegate = self
         // When getDetails() is called, it will trigger LoginViewController's
         // getDetails() function. If a user is not signed in it will also call
         // startPasswordAuthentication(). 
         AWS.shared.currentUser?.getDetails()
+
+        // Add any custom logic here.
         
         return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(app, open: url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -87,11 +94,12 @@ extension AppDelegate: AWSCognitoIdentityInteractiveAuthenticationDelegate {
     // user logged in. So, inside the function is code to show the login view controller
     func startPasswordAuthentication() -> AWSCognitoIdentityPasswordAuthentication {
         print("called-startPasswordAuthentication")
-        let loginVC = self.storyboard?.instantiateViewController(withIdentifier: "loginVC") as! LogInViewController
-        self.window?.rootViewController = loginVC
+        //let loginVC = (self.storyboard?.instantiateViewController(withIdentifier: "loginVC") as! LogInViewController)
+        let landingVC = LandingViewController()
+        self.window?.rootViewController = landingVC
         self.window?.makeKeyAndVisible()
         
-        return loginVC
+        return landingVC
     }
     
     // AWS Cognito has different states for user accounts. One state is that the

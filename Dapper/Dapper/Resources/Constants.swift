@@ -20,6 +20,7 @@ struct CONST {
             static let CLIENT_SECRET = "c44spajct5rbdvgft5kpttca2pp0gaq6i3msctnlemmcql3g4s0"
             static let POOL_ID = "us-west-2_96PLwtoLp"
             static let POOL_NAME = "dapper-clients"
+            static let IDENTITY_POOL_ID = "us-west-2:a75f5eb3-d959-4a54-802c-10b2cba37fa4"
         }
     }
 }

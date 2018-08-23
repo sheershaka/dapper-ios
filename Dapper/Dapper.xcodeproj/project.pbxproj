@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		09D40FE1B7116EC80603D47D /* Pods_DapperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB761BD8D0A71F07ED46E2CD /* Pods_DapperUITests.framework */; };
 		0E5E76C39414B857A614BBF8 /* Pods_Dapper_Dapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8863A7C7447F7B15BF6C64E9 /* Pods_Dapper_Dapper.framework */; };
-		1E4A3B912117729D0090CFCB /* Artboard 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E4A3B8F2117729C0090CFCB /* Artboard 1.png */; };
+		1E4A3B912117729D0090CFCB /* large_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E4A3B8F2117729C0090CFCB /* large_logo.png */; };
 		1E4A3B922117729D0090CFCB /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4A3B902117729C0090CFCB /* GradientView.swift */; };
 		618B8769375CBC453241E5C6 /* Pods_DapperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D1BFC32AD1A5C14C8959AD /* Pods_DapperTests.framework */; };
 		6540E0E7DE81E140AE29ED07 /* Pods_Dapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520EECF050ED3B20243EB637 /* Pods_Dapper.framework */; };
@@ -24,6 +24,10 @@
 		92886773211253D000D149E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92886772211253D000D149E2 /* Assets.xcassets */; };
 		92886781211253D000D149E2 /* DapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92886780211253D000D149E2 /* DapperTests.swift */; };
 		9288678C211253D000D149E2 /* DapperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288678B211253D000D149E2 /* DapperUITests.swift */; };
+		9295C7C5212A4B940060FD3A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9295C7C4212A4B940060FD3A /* User.swift */; };
+		92D2A3C4212C584400F9B35C /* DAPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2A3C3212C584400F9B35C /* DAPTextField.swift */; };
+		92D2A3C6212C585B00F9B35C /* DAPButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2A3C5212C585B00F9B35C /* DAPButton.swift */; };
+		92F940F1212B038B00C71D42 /* DAPLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F940F0212B038B00C71D42 /* DAPLandingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +49,7 @@
 
 /* Begin PBXFileReference section */
 		026E1D7DEBDB06B03FE28F8D /* Pods-Dapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dapper/Pods-Dapper.debug.xcconfig"; sourceTree = "<group>"; };
-		1E4A3B8F2117729C0090CFCB /* Artboard 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Artboard 1.png"; path = "../../Resources/Images/Artboard 1.png"; sourceTree = "<group>"; };
+		1E4A3B8F2117729C0090CFCB /* large_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = large_logo.png; sourceTree = "<group>"; };
 		1E4A3B902117729C0090CFCB /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		2F29F57ECE5BDB0533AB19B6 /* Pods-Dapper-Dapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dapper-Dapper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dapper-Dapper/Pods-Dapper-Dapper.release.xcconfig"; sourceTree = "<group>"; };
 		47D0E59A740FF3A3810167F9 /* Pods-DapperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DapperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DapperUITests/Pods-DapperUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +73,10 @@
 		92886787211253D000D149E2 /* DapperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DapperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9288678B211253D000D149E2 /* DapperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DapperUITests.swift; sourceTree = "<group>"; };
 		9288678D211253D000D149E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9295C7C4212A4B940060FD3A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		92D2A3C3212C584400F9B35C /* DAPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPTextField.swift; sourceTree = "<group>"; };
+		92D2A3C5212C585B00F9B35C /* DAPButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPButton.swift; sourceTree = "<group>"; };
+		92F940F0212B038B00C71D42 /* DAPLandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPLandingView.swift; sourceTree = "<group>"; };
 		98D1BFC32AD1A5C14C8959AD /* Pods_DapperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DapperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6684A8B964E3756732B2DD3 /* Pods-DapperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DapperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DapperUITests/Pods-DapperUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A7B55B5D5A6A2848620C7B26 /* Pods-DapperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DapperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DapperTests/Pods-DapperTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -147,6 +155,9 @@
 			isa = PBXGroup;
 			children = (
 				1E4A3B902117729C0090CFCB /* GradientView.swift */,
+				92F940F0212B038B00C71D42 /* DAPLandingView.swift */,
+				92D2A3C3212C584400F9B35C /* DAPTextField.swift */,
+				92D2A3C5212C585B00F9B35C /* DAPButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -155,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				924B005C211D182500CCDCF2 /* AWS.swift */,
+				9295C7C4212A4B940060FD3A /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -162,7 +174,7 @@
 		9220F8C5211BE54F0046ACCA /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				1E4A3B8F2117729C0090CFCB /* Artboard 1.png */,
+				1E4A3B8F2117729C0090CFCB /* large_logo.png */,
 				92886772211253D000D149E2 /* Assets.xcassets */,
 			);
 			path = Images;
@@ -242,8 +254,8 @@
 				92886764211253D000D149E2 /* Sources */,
 				92886765211253D000D149E2 /* Frameworks */,
 				92886766211253D000D149E2 /* Resources */,
-				2E5DC2F15C876745780C2036 /* [CP] Embed Pods Frameworks */,
-				FFF0CC23A8901F067DA6B74B /* [CP] Copy Pods Resources */,
+				53C02AB2BD9F7B7EE95407DC /* [CP] Embed Pods Frameworks */,
+				F5337F28D783894D60003046 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -304,7 +316,7 @@
 				TargetAttributes = {
 					92886767211253D000D149E2 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = A6GX7QAV5J;
+						DevelopmentTeam = 7F7KC2HPR5;
 						ProvisioningStyle = Automatic;
 					};
 					9288677B211253D000D149E2 = {
@@ -345,7 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9212FC3B2112555700A31C21 /* awsconfiguration.json in Resources */,
-				1E4A3B912117729D0090CFCB /* Artboard 1.png in Resources */,
+				1E4A3B912117729D0090CFCB /* large_logo.png in Resources */,
 				92886773211253D000D149E2 /* Assets.xcassets in Resources */,
 				92886771211253D000D149E2 /* Main.storyboard in Resources */,
 			);
@@ -386,7 +398,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2E5DC2F15C876745780C2036 /* [CP] Embed Pods Frameworks */ = {
+		53C02AB2BD9F7B7EE95407DC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -405,6 +417,8 @@
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
@@ -423,6 +437,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
@@ -468,7 +484,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FFF0CC23A8901F067DA6B74B /* [CP] Copy Pods Resources */ = {
+		F5337F28D783894D60003046 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -493,10 +509,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92F940F1212B038B00C71D42 /* DAPLandingView.swift in Sources */,
 				924B005F211D281A00CCDCF2 /* SignUpViewController.swift in Sources */,
 				9288676E211253D000D149E2 /* LandingViewController.swift in Sources */,
+				92D2A3C6212C585B00F9B35C /* DAPButton.swift in Sources */,
+				92D2A3C4212C584400F9B35C /* DAPTextField.swift in Sources */,
 				9288676C211253D000D149E2 /* AppDelegate.swift in Sources */,
 				924B0061211D413200CCDCF2 /* LogInViewController.swift in Sources */,
+				9295C7C5212A4B940060FD3A /* User.swift in Sources */,
 				1E4A3B922117729D0090CFCB /* GradientView.swift in Sources */,
 				924B005D211D182500CCDCF2 /* AWS.swift in Sources */,
 				9220F8C7211BE6760046ACCA /* Constants.swift in Sources */,
@@ -661,10 +681,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A6GX7QAV5J;
+				DEVELOPMENT_TEAM = 7F7KC2HPR5;
 				INFOPLIST_FILE = Dapper/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dingels.Dapper;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dapper.dapper-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
@@ -678,10 +698,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A6GX7QAV5J;
+				DEVELOPMENT_TEAM = 7F7KC2HPR5;
 				INFOPLIST_FILE = Dapper/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dingels.Dapper;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dapper.dapper-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;

@@ -10,23 +10,43 @@
 		09D40FE1B7116EC80603D47D /* Pods_DapperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB761BD8D0A71F07ED46E2CD /* Pods_DapperUITests.framework */; };
 		0E5E76C39414B857A614BBF8 /* Pods_Dapper_Dapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8863A7C7447F7B15BF6C64E9 /* Pods_Dapper_Dapper.framework */; };
 		1E4A3B912117729D0090CFCB /* large_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E4A3B8F2117729C0090CFCB /* large_logo.png */; };
-		1E4A3B922117729D0090CFCB /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4A3B902117729C0090CFCB /* GradientView.swift */; };
 		618B8769375CBC453241E5C6 /* Pods_DapperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D1BFC32AD1A5C14C8959AD /* Pods_DapperTests.framework */; };
 		6540E0E7DE81E140AE29ED07 /* Pods_Dapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520EECF050ED3B20243EB637 /* Pods_Dapper.framework */; };
 		9212FC3B2112555700A31C21 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 9212FC3A2112555700A31C21 /* awsconfiguration.json */; };
 		9220F8C7211BE6760046ACCA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9220F8C6211BE6760046ACCA /* Constants.swift */; };
 		924B005D211D182500CCDCF2 /* AWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B005C211D182500CCDCF2 /* AWS.swift */; };
-		924B005F211D281A00CCDCF2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B005E211D281A00CCDCF2 /* SignUpViewController.swift */; };
-		924B0061211D413200CCDCF2 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B0060211D413200CCDCF2 /* LogInViewController.swift */; };
+		924C3C9A2132066D0039C50C /* DAPSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C3C992132066D0039C50C /* DAPSignUpView.swift */; };
+		924C3C9C213206790039C50C /* DAPSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C3C9B213206790039C50C /* DAPSignInView.swift */; };
+		924C3C9F21320E970039C50C /* dapper_title.png in Resources */ = {isa = PBXBuildFile; fileRef = 924C3C9E21320E970039C50C /* dapper_title.png */; };
+		924C3CA12132113D0039C50C /* DAPButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C3CA02132113D0039C50C /* DAPButton.swift */; };
+		924C3CA3213220180039C50C /* DAPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C3CA2213220180039C50C /* DAPTextField.swift */; };
+		924C3CAA213222BE0039C50C /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C3CA4213222BE0039C50C /* AkiraTextField.swift */; };
+		924C3CAB213222BE0039C50C /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C3CA5213222BE0039C50C /* JiroTextField.swift */; };
+		924C3CAC213222BE0039C50C /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C3CA6213222BE0039C50C /* IsaoTextField.swift */; };
+		924C3CAD213222BE0039C50C /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C3CA7213222BE0039C50C /* KaedeTextField.swift */; };
+		924C3CAE213222BE0039C50C /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C3CA8213222BE0039C50C /* MadokaTextField.swift */; };
+		924C3CAF213222BE0039C50C /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C3CA9213222BE0039C50C /* MinoruTextField.swift */; };
+		924C3CB121324FD70039C50C /* DAPSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C3CB021324FD70039C50C /* DAPSignUpViewController.swift */; };
+		924C3CB321324FEB0039C50C /* DAPConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C3CB221324FEB0039C50C /* DAPConfirmationViewController.swift */; };
+		924C3CB521324FF60039C50C /* DAPSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C3CB421324FF60039C50C /* DAPSignInViewController.swift */; };
+		924C3CB9213252BB0039C50C /* DAPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C3CB8213252BB0039C50C /* DAPViewController.swift */; };
+		924C3CBD213300A40039C50C /* DAPForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C3CBC213300A40039C50C /* DAPForgotPasswordView.swift */; };
+		924C3CC12133012A0039C50C /* DAPForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C3CC02133012A0039C50C /* DAPForgotPasswordViewController.swift */; };
+		925CF3DC212E5ACA001EA9EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 925CF3DB212E5ACA001EA9EE /* Main.storyboard */; };
 		9288676C211253D000D149E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288676B211253D000D149E2 /* AppDelegate.swift */; };
-		9288676E211253D000D149E2 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288676D211253D000D149E2 /* LandingViewController.swift */; };
-		92886771211253D000D149E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9288676F211253D000D149E2 /* Main.storyboard */; };
+		9288676E211253D000D149E2 /* DAPLandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288676D211253D000D149E2 /* DAPLandingViewController.swift */; };
 		92886773211253D000D149E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92886772211253D000D149E2 /* Assets.xcassets */; };
 		92886781211253D000D149E2 /* DapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92886780211253D000D149E2 /* DapperTests.swift */; };
 		9288678C211253D000D149E2 /* DapperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288678B211253D000D149E2 /* DapperUITests.swift */; };
 		9295C7C5212A4B940060FD3A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9295C7C4212A4B940060FD3A /* User.swift */; };
-		92D2A3C4212C584400F9B35C /* DAPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2A3C3212C584400F9B35C /* DAPTextField.swift */; };
-		92D2A3C6212C585B00F9B35C /* DAPButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2A3C5212C585B00F9B35C /* DAPButton.swift */; };
+		92B466B1212F9FC100F39DBF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B466B0212F9FC100F39DBF /* Launch Screen.storyboard */; };
+		92B466B3212FAB4600F39DBF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B466B2212FAB4600F39DBF /* Utils.swift */; };
+		92B466B5212FAE9F00F39DBF /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B466B4212FAE9E00F39DBF /* HoshiTextField.swift */; };
+		92B466B9212FAEF900F39DBF /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B466B8212FAEF900F39DBF /* TextFieldEffects.swift */; };
+		92B466BB212FB3AD00F39DBF /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B466BA212FB3AD00F39DBF /* YokoTextField.swift */; };
+		92B466BD212FB3FB00F39DBF /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B466BC212FB3FA00F39DBF /* YoshikoTextField.swift */; };
+		92DD38722130478E0006D4F5 /* DAPConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD38712130478E0006D4F5 /* DAPConfirmationView.swift */; };
+		92DD3874213048E70006D4F5 /* _DAPLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD3873213048E70006D4F5 /* _DAPLogoView.swift */; };
 		92F940F1212B038B00C71D42 /* DAPLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F940F0212B038B00C71D42 /* DAPLandingView.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +70,6 @@
 /* Begin PBXFileReference section */
 		026E1D7DEBDB06B03FE28F8D /* Pods-Dapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dapper/Pods-Dapper.debug.xcconfig"; sourceTree = "<group>"; };
 		1E4A3B8F2117729C0090CFCB /* large_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = large_logo.png; sourceTree = "<group>"; };
-		1E4A3B902117729C0090CFCB /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		2F29F57ECE5BDB0533AB19B6 /* Pods-Dapper-Dapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dapper-Dapper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dapper-Dapper/Pods-Dapper-Dapper.release.xcconfig"; sourceTree = "<group>"; };
 		47D0E59A740FF3A3810167F9 /* Pods-DapperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DapperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DapperUITests/Pods-DapperUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		520EECF050ED3B20243EB637 /* Pods_Dapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,12 +78,27 @@
 		9212FC3A2112555700A31C21 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		9220F8C6211BE6760046ACCA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		924B005C211D182500CCDCF2 /* AWS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWS.swift; sourceTree = "<group>"; };
-		924B005E211D281A00CCDCF2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		924B0060211D413200CCDCF2 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		924C3C992132066D0039C50C /* DAPSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPSignUpView.swift; sourceTree = "<group>"; };
+		924C3C9B213206790039C50C /* DAPSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPSignInView.swift; sourceTree = "<group>"; };
+		924C3C9E21320E970039C50C /* dapper_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dapper_title.png; sourceTree = "<group>"; };
+		924C3CA02132113D0039C50C /* DAPButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPButton.swift; sourceTree = "<group>"; };
+		924C3CA2213220180039C50C /* DAPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPTextField.swift; sourceTree = "<group>"; };
+		924C3CA4213222BE0039C50C /* AkiraTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AkiraTextField.swift; sourceTree = "<group>"; };
+		924C3CA5213222BE0039C50C /* JiroTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JiroTextField.swift; sourceTree = "<group>"; };
+		924C3CA6213222BE0039C50C /* IsaoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsaoTextField.swift; sourceTree = "<group>"; };
+		924C3CA7213222BE0039C50C /* KaedeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaedeTextField.swift; sourceTree = "<group>"; };
+		924C3CA8213222BE0039C50C /* MadokaTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MadokaTextField.swift; sourceTree = "<group>"; };
+		924C3CA9213222BE0039C50C /* MinoruTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinoruTextField.swift; sourceTree = "<group>"; };
+		924C3CB021324FD70039C50C /* DAPSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPSignUpViewController.swift; sourceTree = "<group>"; };
+		924C3CB221324FEB0039C50C /* DAPConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPConfirmationViewController.swift; sourceTree = "<group>"; };
+		924C3CB421324FF60039C50C /* DAPSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPSignInViewController.swift; sourceTree = "<group>"; };
+		924C3CB8213252BB0039C50C /* DAPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPViewController.swift; sourceTree = "<group>"; };
+		924C3CBC213300A40039C50C /* DAPForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPForgotPasswordView.swift; sourceTree = "<group>"; };
+		924C3CC02133012A0039C50C /* DAPForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		925CF3DB212E5ACA001EA9EE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		92886768211253D000D149E2 /* Dapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9288676B211253D000D149E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9288676D211253D000D149E2 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
-		92886770211253D000D149E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9288676D211253D000D149E2 /* DAPLandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPLandingViewController.swift; sourceTree = "<group>"; };
 		92886772211253D000D149E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Resources/Images/Assets.xcassets; sourceTree = "<group>"; };
 		92886777211253D000D149E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9288677C211253D000D149E2 /* DapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,8 +108,15 @@
 		9288678B211253D000D149E2 /* DapperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DapperUITests.swift; sourceTree = "<group>"; };
 		9288678D211253D000D149E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9295C7C4212A4B940060FD3A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		92D2A3C3212C584400F9B35C /* DAPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPTextField.swift; sourceTree = "<group>"; };
-		92D2A3C5212C585B00F9B35C /* DAPButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPButton.swift; sourceTree = "<group>"; };
+		92B466B0212F9FC100F39DBF /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		92B466B2212FAB4600F39DBF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		92B466B4212FAE9E00F39DBF /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
+		92B466B6212FAEBC00F39DBF /* TextFieldEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
+		92B466B8212FAEF900F39DBF /* TextFieldEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEffects.swift; sourceTree = "<group>"; };
+		92B466BA212FB3AD00F39DBF /* YokoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YokoTextField.swift; sourceTree = "<group>"; };
+		92B466BC212FB3FA00F39DBF /* YoshikoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
+		92DD38712130478E0006D4F5 /* DAPConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPConfirmationView.swift; sourceTree = "<group>"; };
+		92DD3873213048E70006D4F5 /* _DAPLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DAPLogoView.swift; sourceTree = "<group>"; };
 		92F940F0212B038B00C71D42 /* DAPLandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPLandingView.swift; sourceTree = "<group>"; };
 		98D1BFC32AD1A5C14C8959AD /* Pods_DapperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DapperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6684A8B964E3756732B2DD3 /* Pods-DapperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DapperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DapperUITests/Pods-DapperUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,10 +173,12 @@
 		9220F8C1211BE5130046ACCA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9288676F211253D000D149E2 /* Main.storyboard */,
+				92B466B0212F9FC100F39DBF /* Launch Screen.storyboard */,
+				925CF3DB212E5ACA001EA9EE /* Main.storyboard */,
 				92886777211253D000D149E2 /* Info.plist */,
 				9212FC3A2112555700A31C21 /* awsconfiguration.json */,
 				9220F8C6211BE6760046ACCA /* Constants.swift */,
+				92B466B2212FAB4600F39DBF /* Utils.swift */,
 				9220F8C5211BE54F0046ACCA /* Images */,
 			);
 			path = Resources;
@@ -144,9 +187,8 @@
 		9220F8C2211BE51D0046ACCA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9288676D211253D000D149E2 /* LandingViewController.swift */,
-				924B005E211D281A00CCDCF2 /* SignUpViewController.swift */,
-				924B0060211D413200CCDCF2 /* LogInViewController.swift */,
+				924C3CB7213252A70039C50C /* General */,
+				924C3CB6213252950039C50C /* Login */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -154,10 +196,9 @@
 		9220F8C3211BE5240046ACCA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1E4A3B902117729C0090CFCB /* GradientView.swift */,
-				92F940F0212B038B00C71D42 /* DAPLandingView.swift */,
-				92D2A3C3212C584400F9B35C /* DAPTextField.swift */,
-				92D2A3C5212C585B00F9B35C /* DAPButton.swift */,
+				924C3C982131D19F0039C50C /* All Screens */,
+				924C3C962131D1730039C50C /* Login Screen */,
+				924C3C952131D0A20039C50C /* Elements */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,10 +215,61 @@
 		9220F8C5211BE54F0046ACCA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				924C3C9E21320E970039C50C /* dapper_title.png */,
 				1E4A3B8F2117729C0090CFCB /* large_logo.png */,
 				92886772211253D000D149E2 /* Assets.xcassets */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		924C3C952131D0A20039C50C /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				92B466B7212FAEC200F39DBF /* TextFieldEffects */,
+				924C3CA02132113D0039C50C /* DAPButton.swift */,
+				924C3CA2213220180039C50C /* DAPTextField.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		924C3C962131D1730039C50C /* Login Screen */ = {
+			isa = PBXGroup;
+			children = (
+				92F940F0212B038B00C71D42 /* DAPLandingView.swift */,
+				924C3C992132066D0039C50C /* DAPSignUpView.swift */,
+				92DD38712130478E0006D4F5 /* DAPConfirmationView.swift */,
+				924C3C9B213206790039C50C /* DAPSignInView.swift */,
+				924C3CBC213300A40039C50C /* DAPForgotPasswordView.swift */,
+			);
+			path = "Login Screen";
+			sourceTree = "<group>";
+		};
+		924C3C982131D19F0039C50C /* All Screens */ = {
+			isa = PBXGroup;
+			children = (
+				92DD3873213048E70006D4F5 /* _DAPLogoView.swift */,
+			);
+			path = "All Screens";
+			sourceTree = "<group>";
+		};
+		924C3CB6213252950039C50C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9288676D211253D000D149E2 /* DAPLandingViewController.swift */,
+				924C3CB021324FD70039C50C /* DAPSignUpViewController.swift */,
+				924C3CB221324FEB0039C50C /* DAPConfirmationViewController.swift */,
+				924C3CB421324FF60039C50C /* DAPSignInViewController.swift */,
+				924C3CC02133012A0039C50C /* DAPForgotPasswordViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		924C3CB7213252A70039C50C /* General */ = {
+			isa = PBXGroup;
+			children = (
+				924C3CB8213252BB0039C50C /* DAPViewController.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 		9288675F211253D000D149E2 = {
@@ -230,6 +322,24 @@
 				9288678D211253D000D149E2 /* Info.plist */,
 			);
 			path = DapperUITests;
+			sourceTree = "<group>";
+		};
+		92B466B7212FAEC200F39DBF /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				924C3CA4213222BE0039C50C /* AkiraTextField.swift */,
+				924C3CA6213222BE0039C50C /* IsaoTextField.swift */,
+				924C3CA5213222BE0039C50C /* JiroTextField.swift */,
+				924C3CA7213222BE0039C50C /* KaedeTextField.swift */,
+				924C3CA8213222BE0039C50C /* MadokaTextField.swift */,
+				924C3CA9213222BE0039C50C /* MinoruTextField.swift */,
+				92B466BC212FB3FA00F39DBF /* YoshikoTextField.swift */,
+				92B466BA212FB3AD00F39DBF /* YokoTextField.swift */,
+				92B466B8212FAEF900F39DBF /* TextFieldEffects.swift */,
+				92B466B6212FAEBC00F39DBF /* TextFieldEffects.h */,
+				92B466B4212FAE9E00F39DBF /* HoshiTextField.swift */,
+			);
+			path = TextFieldEffects;
 			sourceTree = "<group>";
 		};
 		D2C22FA205D615954CA0D585 /* Frameworks */ = {
@@ -317,15 +427,18 @@
 					92886767211253D000D149E2 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 7F7KC2HPR5;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 					};
 					9288677B211253D000D149E2 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 92886767211253D000D149E2;
 					};
 					92886786211253D000D149E2 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 92886767211253D000D149E2;
 					};
@@ -358,8 +471,10 @@
 			files = (
 				9212FC3B2112555700A31C21 /* awsconfiguration.json in Resources */,
 				1E4A3B912117729D0090CFCB /* large_logo.png in Resources */,
+				924C3C9F21320E970039C50C /* dapper_title.png in Resources */,
 				92886773211253D000D149E2 /* Assets.xcassets in Resources */,
-				92886771211253D000D149E2 /* Main.storyboard in Resources */,
+				92B466B1212F9FC100F39DBF /* Launch Screen.storyboard in Resources */,
+				925CF3DC212E5ACA001EA9EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,17 +624,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				924C3CB321324FEB0039C50C /* DAPConfirmationViewController.swift in Sources */,
+				92B466BD212FB3FB00F39DBF /* YoshikoTextField.swift in Sources */,
+				924C3CAF213222BE0039C50C /* MinoruTextField.swift in Sources */,
+				924C3CA3213220180039C50C /* DAPTextField.swift in Sources */,
+				92DD38722130478E0006D4F5 /* DAPConfirmationView.swift in Sources */,
+				92B466B5212FAE9F00F39DBF /* HoshiTextField.swift in Sources */,
 				92F940F1212B038B00C71D42 /* DAPLandingView.swift in Sources */,
-				924B005F211D281A00CCDCF2 /* SignUpViewController.swift in Sources */,
-				9288676E211253D000D149E2 /* LandingViewController.swift in Sources */,
-				92D2A3C6212C585B00F9B35C /* DAPButton.swift in Sources */,
-				92D2A3C4212C584400F9B35C /* DAPTextField.swift in Sources */,
+				92B466B9212FAEF900F39DBF /* TextFieldEffects.swift in Sources */,
+				924C3CB521324FF60039C50C /* DAPSignInViewController.swift in Sources */,
+				924C3CAA213222BE0039C50C /* AkiraTextField.swift in Sources */,
+				9288676E211253D000D149E2 /* DAPLandingViewController.swift in Sources */,
+				924C3CAE213222BE0039C50C /* MadokaTextField.swift in Sources */,
 				9288676C211253D000D149E2 /* AppDelegate.swift in Sources */,
-				924B0061211D413200CCDCF2 /* LogInViewController.swift in Sources */,
+				924C3CAD213222BE0039C50C /* KaedeTextField.swift in Sources */,
+				924C3CBD213300A40039C50C /* DAPForgotPasswordView.swift in Sources */,
+				924C3CAB213222BE0039C50C /* JiroTextField.swift in Sources */,
+				924C3C9C213206790039C50C /* DAPSignInView.swift in Sources */,
+				92B466B3212FAB4600F39DBF /* Utils.swift in Sources */,
+				92B466BB212FB3AD00F39DBF /* YokoTextField.swift in Sources */,
+				924C3C9A2132066D0039C50C /* DAPSignUpView.swift in Sources */,
+				924C3CA12132113D0039C50C /* DAPButton.swift in Sources */,
+				924C3CC12133012A0039C50C /* DAPForgotPasswordViewController.swift in Sources */,
+				924C3CB121324FD70039C50C /* DAPSignUpViewController.swift in Sources */,
 				9295C7C5212A4B940060FD3A /* User.swift in Sources */,
-				1E4A3B922117729D0090CFCB /* GradientView.swift in Sources */,
+				92DD3874213048E70006D4F5 /* _DAPLogoView.swift in Sources */,
 				924B005D211D182500CCDCF2 /* AWS.swift in Sources */,
 				9220F8C7211BE6760046ACCA /* Constants.swift in Sources */,
+				924C3CB9213252BB0039C50C /* DAPViewController.swift in Sources */,
+				924C3CAC213222BE0039C50C /* IsaoTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,18 +686,6 @@
 			targetProxy = 92886788211253D000D149E2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		9288676F211253D000D149E2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				92886770211253D000D149E2 /* Base */,
-			);
-			name = Main.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9288678E211253D000D149E2 /* Debug */ = {

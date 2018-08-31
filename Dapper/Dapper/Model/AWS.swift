@@ -37,7 +37,6 @@ final class AWS {
         self.hasConfigured = true
         
         initalizePool(config: config)
-        
     }
     
     func initalizePool(config: AWSServiceConfiguration) {
@@ -57,9 +56,9 @@ final class AWS {
             print("Error connecting to AWS: cannot initialize User Pool")
         } else {
             self.currentUser = self.pool!.getUser()
+            print(self.currentUser)
         }
     }
-    
 }
 
 class FacebookProvider: NSObject, AWSIdentityProviderManager {

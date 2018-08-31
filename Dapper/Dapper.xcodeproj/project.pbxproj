@@ -47,6 +47,7 @@
 		92B466BD212FB3FB00F39DBF /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B466BC212FB3FA00F39DBF /* YoshikoTextField.swift */; };
 		92DD38722130478E0006D4F5 /* DAPConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD38712130478E0006D4F5 /* DAPConfirmationView.swift */; };
 		92DD3874213048E70006D4F5 /* _DAPLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD3873213048E70006D4F5 /* _DAPLogoView.swift */; };
+		92EBC09021398D5A0078D63A /* DAPPaymentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EBC08F21398D5A0078D63A /* DAPPaymentManager.swift */; };
 		92F940F1212B038B00C71D42 /* DAPLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F940F0212B038B00C71D42 /* DAPLandingView.swift */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +118,7 @@
 		92B466BC212FB3FA00F39DBF /* YoshikoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
 		92DD38712130478E0006D4F5 /* DAPConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPConfirmationView.swift; sourceTree = "<group>"; };
 		92DD3873213048E70006D4F5 /* _DAPLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DAPLogoView.swift; sourceTree = "<group>"; };
+		92EBC08F21398D5A0078D63A /* DAPPaymentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPPaymentManager.swift; sourceTree = "<group>"; };
 		92F940F0212B038B00C71D42 /* DAPLandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPLandingView.swift; sourceTree = "<group>"; };
 		98D1BFC32AD1A5C14C8959AD /* Pods_DapperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DapperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6684A8B964E3756732B2DD3 /* Pods-DapperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DapperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DapperUITests/Pods-DapperUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 			children = (
 				924B005C211D182500CCDCF2 /* AWS.swift */,
 				9295C7C4212A4B940060FD3A /* User.swift */,
+				92EBC08F21398D5A0078D63A /* DAPPaymentManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -652,6 +655,7 @@
 				924B005D211D182500CCDCF2 /* AWS.swift in Sources */,
 				9220F8C7211BE6760046ACCA /* Constants.swift in Sources */,
 				924C3CB9213252BB0039C50C /* DAPViewController.swift in Sources */,
+				92EBC09021398D5A0078D63A /* DAPPaymentManager.swift in Sources */,
 				924C3CAC213222BE0039C50C /* IsaoTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

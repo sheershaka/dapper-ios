@@ -43,6 +43,4 @@ class DAPLandingViewController: DAPViewController {
         let vc = DAPSignInViewController()
         present(vc, animated: true)
     }
-
-
 }

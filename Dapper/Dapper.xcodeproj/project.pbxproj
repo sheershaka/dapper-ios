@@ -32,7 +32,6 @@
 		924C3CB9213252BB0039C50C /* DAPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C3CB8213252BB0039C50C /* DAPViewController.swift */; };
 		924C3CBD213300A40039C50C /* DAPForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C3CBC213300A40039C50C /* DAPForgotPasswordView.swift */; };
 		924C3CC12133012A0039C50C /* DAPForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C3CC02133012A0039C50C /* DAPForgotPasswordViewController.swift */; };
-		925CF3DC212E5ACA001EA9EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 925CF3DB212E5ACA001EA9EE /* Main.storyboard */; };
 		9288676C211253D000D149E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288676B211253D000D149E2 /* AppDelegate.swift */; };
 		9288676E211253D000D149E2 /* DAPLandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288676D211253D000D149E2 /* DAPLandingViewController.swift */; };
 		92886773211253D000D149E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92886772211253D000D149E2 /* Assets.xcassets */; };
@@ -96,7 +95,6 @@
 		924C3CB8213252BB0039C50C /* DAPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPViewController.swift; sourceTree = "<group>"; };
 		924C3CBC213300A40039C50C /* DAPForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPForgotPasswordView.swift; sourceTree = "<group>"; };
 		924C3CC02133012A0039C50C /* DAPForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPForgotPasswordViewController.swift; sourceTree = "<group>"; };
-		925CF3DB212E5ACA001EA9EE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		92886768211253D000D149E2 /* Dapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9288676B211253D000D149E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9288676D211253D000D149E2 /* DAPLandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPLandingViewController.swift; sourceTree = "<group>"; };
@@ -176,7 +174,6 @@
 			isa = PBXGroup;
 			children = (
 				92B466B0212F9FC100F39DBF /* Launch Screen.storyboard */,
-				925CF3DB212E5ACA001EA9EE /* Main.storyboard */,
 				92886777211253D000D149E2 /* Info.plist */,
 				9212FC3A2112555700A31C21 /* awsconfiguration.json */,
 				9220F8C6211BE6760046ACCA /* Constants.swift */,
@@ -367,8 +364,8 @@
 				92886764211253D000D149E2 /* Sources */,
 				92886765211253D000D149E2 /* Frameworks */,
 				92886766211253D000D149E2 /* Resources */,
-				53C02AB2BD9F7B7EE95407DC /* [CP] Embed Pods Frameworks */,
-				F5337F28D783894D60003046 /* [CP] Copy Pods Resources */,
+				52F1B7EFD724521146DAEA78 /* [CP] Embed Pods Frameworks */,
+				97957A0FA57E74C788C665A6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -477,7 +474,6 @@
 				924C3C9F21320E970039C50C /* dapper_title.png in Resources */,
 				92886773211253D000D149E2 /* Assets.xcassets in Resources */,
 				92B466B1212F9FC100F39DBF /* Launch Screen.storyboard in Resources */,
-				925CF3DC212E5ACA001EA9EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,7 +512,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		53C02AB2BD9F7B7EE95407DC /* [CP] Embed Pods Frameworks */ = {
+		52F1B7EFD724521146DAEA78 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -566,6 +562,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dapper-Dapper/Pods-Dapper-Dapper-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		97957A0FA57E74C788C665A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Dapper-Dapper/Pods-Dapper-Dapper-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dapper-Dapper/Pods-Dapper-Dapper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DA748F3F91BE7C0EB060B768 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -600,24 +614,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F5337F28D783894D60003046 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Dapper-Dapper/Pods-Dapper-Dapper-resources.sh",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dapper-Dapper/Pods-Dapper-Dapper-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

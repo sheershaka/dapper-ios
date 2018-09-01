@@ -43,11 +43,9 @@ class DAPSignInViewController: DAPViewController {
         let username = DAPView?.usernameTextField.text
         let password = DAPView?.passwordTextField.text
         
-        let fieldsAreNonEmpty: Bool = username != "" && password != ""
-        if (fieldsAreNonEmpty) {
-            let authDetails = AWSCognitoIdentityPasswordAuthenticationDetails(username: username!, password: password!)
-            self.passwordAuthenticationCompletion?.set(result: authDetails)
-        } else {
+        let fieldsAreEmpty: Bool = username == "" && password == ""
+        
+        if (fieldsAreEmpty) {
             let alertController = UIAlertController(title: "Missing information",
                                                     message: "Please enter a valid user name and password",
                                                     preferredStyle: .alert)
@@ -55,6 +53,25 @@ class DAPSignInViewController: DAPViewController {
             alertController.addAction(retryAction)
             self.present(alertController, animated: true, completion: nil)
         }
+        
+        AWS.shared.currentUser?.getSession(username!, password: password!, validationData: nil).continueWith(block: { (task: AWSTask<AWSCognitoIdentityUserSession>) -> Any? in
+            DispatchQueue.main.async {
+                if let error = task.error {
+                    // TODO Parse error for unconfirmed user, present the confirmation screen. 
+                    let nserror = error as! NSError
+                    let alertController = UIAlertController(title: nserror.userInfo["__type"] as? String,
+                                                            message: nserror.userInfo["message"] as? String,
+                                                            preferredStyle: .alert)
+                    let retryAction = UIAlertAction(title: "Retry", style: .default, handler: nil)
+                    alertController.addAction(retryAction)
+                    self.present(alertController, animated: true, completion: nil)
+                    
+                } else {
+                    // TODO present homescreen.
+                    print("user signed in")
+                }
+            }
+        })
     }
     
     func cancelPressed(_ sender: UITapGestureRecognizer) {

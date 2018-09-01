@@ -46,6 +46,7 @@ class DAPSignUpView: _DAPLogoView {
         nameTextField.frame = CGRect(x: x, y: y, width: width, height: height)
         
         nameTextField.placeholder = "User Name"
+        nameTextField.autocapitalizationType = UITextAutocapitalizationType.none
     }
     
     func setupPhoneTextField() {
@@ -72,6 +73,7 @@ class DAPSignUpView: _DAPLogoView {
         emailTextField.placeholder = "Email"
         
         emailTextField.keyboardType = UIKeyboardType.emailAddress
+        nameTextField.autocapitalizationType = UITextAutocapitalizationType.none
     }
     
     func setupPasswordTextField() {

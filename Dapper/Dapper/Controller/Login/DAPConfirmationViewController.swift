@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import AWSCore
+import AWSCognitoIdentityProvider
 
 class DAPConfirmationViewController: DAPViewController {
     
@@ -31,7 +33,25 @@ class DAPConfirmationViewController: DAPViewController {
     }
     
     func submitPressed(_ sender: UITapGestureRecognizer) {
-        
+        let confirmationCode = DAPView?.confirmTextField.text
+        print(confirmationCode)
+        AWS.shared.currentUser?.confirmSignUp(confirmationCode!).continueWith(block: { (task: AWSTask<AWSCognitoIdentityUserConfirmSignUpResponse>) -> Any? in
+            DispatchQueue.main.async {
+                if let error = task.error {
+                    let nserror = error as! NSError
+                    let alertController = UIAlertController(title: nserror.userInfo["__type"] as? String,
+                                                            message: nserror.userInfo["message"] as? String,
+                                                            preferredStyle: .alert)
+                    let retryAction = UIAlertAction(title: "Retry", style: .default, handler: nil)
+                    alertController.addAction(retryAction)
+                    self.present(alertController, animated: true, completion: nil)
+                    
+                } else {
+                    // TODO present homescreen.
+                    print("user confirmed")
+                }
+            }
+        })
     }
     
     func cancelPressed(_ sender: UITapGestureRecognizer) {

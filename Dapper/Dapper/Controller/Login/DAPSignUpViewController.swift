@@ -28,6 +28,13 @@ class DAPSignUpViewController: DAPViewController {
         DAPView?.cancelButton.addTarget(self, action: #selector(self.cancelPressed(_:)), for: UIControlEvents.touchUpInside)
         
         self.view.addSubview(DAPView!)
+        
+        // TODO Remove this
+        DAPView?.nameTextField.text = "/dingelsz"
+        DAPView?.phoneTextField.text = "2062938432"
+        DAPView?.emailTextField.text = "dingelsz@uw.edu"
+        DAPView?.passwordTextField.text = "tester123"
+        DAPView?.confirmPasswordTextField.text = "tester123"
     }
     
     override func didReceiveMemoryWarning() {
@@ -83,21 +90,34 @@ class DAPSignUpViewController: DAPViewController {
             alertController.addAction(retryAction)
             self.present(alertController, animated: true, completion: nil)
             
-            errorMessage = ""
-        } else {
-            // let phoneAttribute = AWSCognitoIdentityUserAttributeType(name: "phone", value: phone!)
-            let emailAttribute = AWSCognitoIdentityUserAttributeType(name: "email", value: email!)
-            
-            print(AWS.shared.pool?.signUp(username!, password: password!, userAttributes: [emailAttribute], validationData: nil).continueOnSuccessWith(block: { (task: AWSTask<AWSCognitoIdentityUserPoolSignUpResponse>) -> Any? in
-                print("sucessfully added user")
-                return task
-            }))
-            print("ayo")
-            
-            
-            let vc = DAPConfirmationViewController()
-            self.present(vc, animated: true)
+            return
         }
+        
+        // let phoneAttribute = AWSCognitoIdentityUserAttributeType(name: "phone", value: phone!)
+        let emailAttribute = AWSCognitoIdentityUserAttributeType(name: "email", value: email!)
+        
+        AWS.shared.pool?.signUp(username!, password: password!, userAttributes: [emailAttribute], validationData: nil).continueWith(block: { (task: AWSTask<AWSCognitoIdentityUserPoolSignUpResponse>) -> Any? in
+            DispatchQueue.main.async {
+                if let error = task.error {
+                    let nserror = error as! NSError
+                    let alertController = UIAlertController(title: nserror.userInfo["__type"] as? String,
+                                                            message: nserror.userInfo["message"] as? String,
+                                                            preferredStyle: .alert)
+                    let retryAction = UIAlertAction(title: "Retry", style: .default, handler: nil)
+                    alertController.addAction(retryAction)
+                    self.present(alertController, animated: true, completion: nil)
+                    
+                } else {
+                    let response: AWSCognitoIdentityUserPoolSignUpResponse = task.result! as AWSCognitoIdentityUserPoolSignUpResponse
+                    // NSLog("AWSCognitoIdentityUserPoolSignUpResponse: \(response)")
+                    AWS.shared.currentUser = response.user
+                    
+                    let vc = DAPConfirmationViewController()
+                    self.present(vc, animated: true)
+                }
+            }
+            return nil
+        })
         
     }
     

@@ -5,6 +5,10 @@
 .Spotlight-V100
 *.swp
 
+DapperTests/
+DapperUITests/
+Constants.swift
+
 ## Xcode build files
 DerivedData/
 build/

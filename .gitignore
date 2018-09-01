@@ -5,10 +5,11 @@
 .Spotlight-V100
 *.swp
 
-/Dapper/DapperTests/
-/Dapper/DapperUITests/
-/Dapper/Podfile.lock
+## Hide AWS info from plist and constants
+/Dapper/Dapper/Resources/Info.plist
 /Dapper/Dapper/Resources/Constants.swift
+
+# Hide user settings
 /**/xcuserdata/
 
 ## Xcode build files
@@ -25,10 +26,6 @@ build/
 *.perspectivev3
 !default.perspectivev3
 
-*.xcuserdata/*
-
-## Hide developer accounts in PList
-/Dapper/Dapper/Resources/Info.plist
 
 ## Other
 *.xccheckout

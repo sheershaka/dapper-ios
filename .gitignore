@@ -7,7 +7,9 @@
 
 /Dapper/DapperTests/
 /Dapper/DapperUITests/
+/Dapper/Podfile.lock
 /Dapper/Dapper/Resources/Constants.swift
+/Dapper/Dapper.xcodeproj/xcuserdata/
 
 ## Xcode build files
 DerivedData/

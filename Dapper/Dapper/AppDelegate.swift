@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setupAWS()
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
-        let landingVC = DAPLandingViewController()
+        let landingVC = DAPScheduleAppointmentViewController()
         
         self.window?.rootViewController = landingVC
         self.window?.makeKeyAndVisible()

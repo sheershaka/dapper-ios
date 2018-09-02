@@ -20,7 +20,7 @@ class DAPTextField: MadokaTextField {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupView() {
+    private func setupView() {
         backgroundColor = CONST.UI.TEXT_FIELD.COLOR
         layer.cornerRadius = CONST.UI.TEXT_FIELD.CORNER_RADIUS
         layer.borderWidth = CONST.UI.TEXT_FIELD.BORDER_THICCC

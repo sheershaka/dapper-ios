@@ -32,18 +32,18 @@ class DAPSignInView: _DAPLogoView {
         addViews()
     }
     
-    func setupUsernameTextField() {
+    private func setupUsernameTextField() {
         let width: CGFloat = self.frame.width * (1 - 2 * CONST.UI.FRAME.SIDE_MARGIN)
         let height: CGFloat = CONST.UI.BUTTON.HEIGHT
         let x: CGFloat = self.frame.width * CONST.UI.FRAME.SIDE_MARGIN
-        let y: CGFloat = self.frame.height * CONST.UI.TEXT_FIELD.TOP_MARGIN
+        let y: CGFloat = self.frame.height * CONST.UI.FRAME.TOP_MARGIN
         
         usernameTextField.frame = CGRect(x: x, y: y, width: width, height: height)
         
         usernameTextField.placeholder = "User Name"
     }
     
-    func setupPasswordTextField() {
+    private func setupPasswordTextField() {
         let width: CGFloat = self.frame.width * (1 - 2 * CONST.UI.FRAME.SIDE_MARGIN)
         let height: CGFloat = CONST.UI.BUTTON.HEIGHT
         let x: CGFloat = self.frame.width * CONST.UI.FRAME.SIDE_MARGIN
@@ -55,7 +55,7 @@ class DAPSignInView: _DAPLogoView {
         passwordTextField.isSecureTextEntry = true
     }
     
-    func setupForgotPasswordButton() {
+    private func setupForgotPasswordButton() {
         let width: CGFloat = self.frame.width * (1 - 2 * CONST.UI.FRAME.SIDE_MARGIN)
         let height: CGFloat = 25
         let x: CGFloat = self.frame.width * CONST.UI.FRAME.SIDE_MARGIN
@@ -66,7 +66,7 @@ class DAPSignInView: _DAPLogoView {
         forgotPasswordButton.setTitle("Forgot Password?", for: UIControlState.normal)
     }
     
-    func setupSubmitButton() {
+    private func setupSubmitButton() {
         let width: CGFloat = self.frame.width * (1 - 2 * CONST.UI.FRAME.SIDE_MARGIN)
         let height: CGFloat = CONST.UI.BUTTON.HEIGHT
         let x: CGFloat = self.frame.width * CONST.UI.FRAME.SIDE_MARGIN
@@ -77,7 +77,7 @@ class DAPSignInView: _DAPLogoView {
         submitButton.setTitle("Submit", for: UIControlState.normal)
     }
     
-    func setupCancelButton() {
+    private func setupCancelButton() {
         let width: CGFloat = self.frame.width * (1 - 2 * CONST.UI.FRAME.SIDE_MARGIN)
         let height: CGFloat = CONST.UI.BUTTON.HEIGHT
         let x: CGFloat = self.frame.width * CONST.UI.FRAME.SIDE_MARGIN

@@ -12,6 +12,9 @@
 		1E4A3B912117729D0090CFCB /* large_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E4A3B8F2117729C0090CFCB /* large_logo.png */; };
 		618B8769375CBC453241E5C6 /* Pods_DapperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D1BFC32AD1A5C14C8959AD /* Pods_DapperTests.framework */; };
 		6540E0E7DE81E140AE29ED07 /* Pods_Dapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520EECF050ED3B20243EB637 /* Pods_Dapper.framework */; };
+		920A89C4213C7A5100CE5643 /* DAPScheduleAppointmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920A89C3213C7A5100CE5643 /* DAPScheduleAppointmentView.swift */; };
+		920A89C6213C7B4200CE5643 /* DAPServicePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920A89C5213C7B4200CE5643 /* DAPServicePicker.swift */; };
+		920A89C9213C849500CE5643 /* DAPScheduleAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920A89C8213C849500CE5643 /* DAPScheduleAppointmentViewController.swift */; };
 		9212FC3B2112555700A31C21 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 9212FC3A2112555700A31C21 /* awsconfiguration.json */; };
 		9220F8C7211BE6760046ACCA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9220F8C6211BE6760046ACCA /* Constants.swift */; };
 		924B005D211D182500CCDCF2 /* AWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B005C211D182500CCDCF2 /* AWS.swift */; };
@@ -75,6 +78,9 @@
 		520EECF050ED3B20243EB637 /* Pods_Dapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8605BE95D65263FA05611065 /* Pods-Dapper-Dapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dapper-Dapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dapper-Dapper/Pods-Dapper-Dapper.debug.xcconfig"; sourceTree = "<group>"; };
 		8863A7C7447F7B15BF6C64E9 /* Pods_Dapper_Dapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dapper_Dapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		920A89C3213C7A5100CE5643 /* DAPScheduleAppointmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPScheduleAppointmentView.swift; sourceTree = "<group>"; };
+		920A89C5213C7B4200CE5643 /* DAPServicePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPServicePicker.swift; sourceTree = "<group>"; };
+		920A89C8213C849500CE5643 /* DAPScheduleAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAPScheduleAppointmentViewController.swift; sourceTree = "<group>"; };
 		9212FC3A2112555700A31C21 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		9220F8C6211BE6760046ACCA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		924B005C211D182500CCDCF2 /* AWS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWS.swift; sourceTree = "<group>"; };
@@ -170,6 +176,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		920A89C2213C7A0600CE5643 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				920A89C3213C7A5100CE5643 /* DAPScheduleAppointmentView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		920A89C7213C7C5500CE5643 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				920A89C8213C849500CE5643 /* DAPScheduleAppointmentViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		9220F8C1211BE5130046ACCA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,8 +208,9 @@
 		9220F8C2211BE51D0046ACCA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				924C3CB7213252A70039C50C /* General */,
 				924C3CB6213252950039C50C /* Login */,
+				920A89C7213C7C5500CE5643 /* Home */,
+				924C3CB7213252A70039C50C /* General */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -195,9 +218,10 @@
 		9220F8C3211BE5240046ACCA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				924C3C982131D19F0039C50C /* All Screens */,
-				924C3C962131D1730039C50C /* Login Screen */,
+				924C3C962131D1730039C50C /* Login */,
+				920A89C2213C7A0600CE5643 /* Home */,
 				924C3C952131D0A20039C50C /* Elements */,
+				924C3C982131D19F0039C50C /* General */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -228,11 +252,12 @@
 				92B466B7212FAEC200F39DBF /* TextFieldEffects */,
 				924C3CA02132113D0039C50C /* DAPButton.swift */,
 				924C3CA2213220180039C50C /* DAPTextField.swift */,
+				920A89C5213C7B4200CE5643 /* DAPServicePicker.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
 		};
-		924C3C962131D1730039C50C /* Login Screen */ = {
+		924C3C962131D1730039C50C /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				92F940F0212B038B00C71D42 /* DAPLandingView.swift */,
@@ -241,15 +266,15 @@
 				924C3C9B213206790039C50C /* DAPSignInView.swift */,
 				924C3CBC213300A40039C50C /* DAPForgotPasswordView.swift */,
 			);
-			path = "Login Screen";
+			path = Login;
 			sourceTree = "<group>";
 		};
-		924C3C982131D19F0039C50C /* All Screens */ = {
+		924C3C982131D19F0039C50C /* General */ = {
 			isa = PBXGroup;
 			children = (
 				92DD3873213048E70006D4F5 /* _DAPLogoView.swift */,
 			);
-			path = "All Screens";
+			path = General;
 			sourceTree = "<group>";
 		};
 		924C3CB6213252950039C50C /* Login */ = {
@@ -632,17 +657,20 @@
 				92F940F1212B038B00C71D42 /* DAPLandingView.swift in Sources */,
 				92B466B9212FAEF900F39DBF /* TextFieldEffects.swift in Sources */,
 				924C3CB521324FF60039C50C /* DAPSignInViewController.swift in Sources */,
+				920A89C4213C7A5100CE5643 /* DAPScheduleAppointmentView.swift in Sources */,
 				924C3CAA213222BE0039C50C /* AkiraTextField.swift in Sources */,
 				9288676E211253D000D149E2 /* DAPLandingViewController.swift in Sources */,
 				924C3CAE213222BE0039C50C /* MadokaTextField.swift in Sources */,
 				9288676C211253D000D149E2 /* AppDelegate.swift in Sources */,
 				924C3CAD213222BE0039C50C /* KaedeTextField.swift in Sources */,
 				924C3CBD213300A40039C50C /* DAPForgotPasswordView.swift in Sources */,
+				920A89C9213C849500CE5643 /* DAPScheduleAppointmentViewController.swift in Sources */,
 				924C3CAB213222BE0039C50C /* JiroTextField.swift in Sources */,
 				924C3C9C213206790039C50C /* DAPSignInView.swift in Sources */,
 				92B466B3212FAB4600F39DBF /* Utils.swift in Sources */,
 				92B466BB212FB3AD00F39DBF /* YokoTextField.swift in Sources */,
 				924C3C9A2132066D0039C50C /* DAPSignUpView.swift in Sources */,
+				920A89C6213C7B4200CE5643 /* DAPServicePicker.swift in Sources */,
 				924C3CA12132113D0039C50C /* DAPButton.swift in Sources */,
 				924C3CC12133012A0039C50C /* DAPForgotPasswordViewController.swift in Sources */,
 				924C3CB121324FD70039C50C /* DAPSignUpViewController.swift in Sources */,

@@ -56,7 +56,7 @@ final class AWS {
             print("Error connecting to AWS: cannot initialize User Pool")
         } else {
             self.currentUser = self.pool!.getUser()
-            print(self.currentUser)
+            print(self.currentUser?.username)
         }
     }
 }

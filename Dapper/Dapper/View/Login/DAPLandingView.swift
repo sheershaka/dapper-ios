@@ -32,18 +32,18 @@ class DAPLandingView: _DAPLogoView {
         addViews()
     }
     
-    func setupSignUpButton() {
+    private func setupSignUpButton() {
         let width: CGFloat = self.frame.width * (1 - 2 * CONST.UI.FRAME.SIDE_MARGIN)
         let height: CGFloat = CONST.UI.BUTTON.HEIGHT
         let x: CGFloat = self.frame.width * CONST.UI.FRAME.SIDE_MARGIN
-        let y: CGFloat = self.frame.height * 0.3
+        let y: CGFloat = self.frame.height * CONST.UI.FRAME.TOP_MARGIN
         
         signUpButton.frame = CGRect(x: x, y: y, width: width, height: height)
         
         signUpButton.setTitle("Sign Up", for: UIControlState.normal)
     }
     
-    func setupSignInButton() {
+    private func setupSignInButton() {
         let width: CGFloat = self.frame.width * (1 - 2 * CONST.UI.FRAME.SIDE_MARGIN)
         let height: CGFloat = CONST.UI.BUTTON.HEIGHT
         let x: CGFloat = self.frame.width * CONST.UI.FRAME.SIDE_MARGIN
@@ -54,7 +54,7 @@ class DAPLandingView: _DAPLogoView {
         signInButton.setTitle("Sign In", for: UIControlState.normal)
     }
     
-    func setupFBButton() {
+    private func setupFBButton() {
         let width: CGFloat = self.frame.width / 2 * (1 - 3 * CONST.UI.FRAME.SIDE_MARGIN)
         let height: CGFloat = 42
         let x: CGFloat = self.frame.width * CONST.UI.FRAME.SIDE_MARGIN
@@ -62,7 +62,7 @@ class DAPLandingView: _DAPLogoView {
         FBLoginButton.frame = CGRect(x: x, y: y, width: width, height: height)
     }
     
-    func setupGoogleButton() {
+    private func setupGoogleButton() {
         let width: CGFloat = self.frame.width / 2 * (1 - 3 * CONST.UI.FRAME.SIDE_MARGIN)
         let height: CGFloat = 50 // Doesn't work
         let x: CGFloat = self.frame.width * 2 * CONST.UI.FRAME.SIDE_MARGIN + width

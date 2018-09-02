@@ -37,11 +37,11 @@ class DAPSignUpView: _DAPLogoView {
         addViews()
     }
     
-    func setupNameTextField() {
+    private func setupNameTextField() {
         let width: CGFloat = self.frame.width * (1 - 2 * CONST.UI.FRAME.SIDE_MARGIN)
         let height: CGFloat = CONST.UI.BUTTON.HEIGHT
         let x: CGFloat = self.frame.width * CONST.UI.FRAME.SIDE_MARGIN
-        let y: CGFloat = self.frame.height * CONST.UI.TEXT_FIELD.TOP_MARGIN
+        let y: CGFloat = self.frame.height * CONST.UI.FRAME.TOP_MARGIN
         
         nameTextField.frame = CGRect(x: x, y: y, width: width, height: height)
         
@@ -49,7 +49,7 @@ class DAPSignUpView: _DAPLogoView {
         nameTextField.autocapitalizationType = UITextAutocapitalizationType.none
     }
     
-    func setupPhoneTextField() {
+    private func setupPhoneTextField() {
         let width: CGFloat = self.frame.width * (1 - 2 * CONST.UI.FRAME.SIDE_MARGIN)
         let height: CGFloat = CONST.UI.BUTTON.HEIGHT
         let x: CGFloat = self.frame.width * CONST.UI.FRAME.SIDE_MARGIN
@@ -62,7 +62,7 @@ class DAPSignUpView: _DAPLogoView {
         phoneTextField.keyboardType = UIKeyboardType.phonePad
     }
     
-    func setupEmailTextField() {
+    private func setupEmailTextField() {
         let width: CGFloat = self.frame.width * (1 - 2 * CONST.UI.FRAME.SIDE_MARGIN)
         let height: CGFloat = CONST.UI.BUTTON.HEIGHT
         let x: CGFloat = self.frame.width * CONST.UI.FRAME.SIDE_MARGIN
@@ -76,7 +76,7 @@ class DAPSignUpView: _DAPLogoView {
         nameTextField.autocapitalizationType = UITextAutocapitalizationType.none
     }
     
-    func setupPasswordTextField() {
+    private func setupPasswordTextField() {
         let width: CGFloat = self.frame.width * (1 - 2 * CONST.UI.FRAME.SIDE_MARGIN)
         let height: CGFloat = CONST.UI.BUTTON.HEIGHT
         let x: CGFloat = self.frame.width * CONST.UI.FRAME.SIDE_MARGIN
@@ -89,7 +89,7 @@ class DAPSignUpView: _DAPLogoView {
         passwordTextField.isSecureTextEntry = true
     }
     
-    func setupConfirmPasswordTextField() {
+    private func setupConfirmPasswordTextField() {
         let width: CGFloat = self.frame.width * (1 - 2 * CONST.UI.FRAME.SIDE_MARGIN)
         let height: CGFloat = CONST.UI.BUTTON.HEIGHT
         let x: CGFloat = self.frame.width * CONST.UI.FRAME.SIDE_MARGIN
@@ -102,7 +102,7 @@ class DAPSignUpView: _DAPLogoView {
         confirmPasswordTextField.isSecureTextEntry = true
     }
     
-    func setupSubmitButton() {
+    private func setupSubmitButton() {
         let width: CGFloat = self.frame.width * (1 - 2 * CONST.UI.FRAME.SIDE_MARGIN)
         let height: CGFloat = CONST.UI.BUTTON.HEIGHT
         let x: CGFloat = self.frame.width * CONST.UI.FRAME.SIDE_MARGIN
@@ -113,7 +113,7 @@ class DAPSignUpView: _DAPLogoView {
         submitButton.setTitle("Sign Up", for: UIControlState.normal)
     }
     
-    func setupCancelButton() {
+    private func setupCancelButton() {
         let width: CGFloat = self.frame.width * (1 - 2 * CONST.UI.FRAME.SIDE_MARGIN)
         let height: CGFloat = CONST.UI.BUTTON.HEIGHT
         let x: CGFloat = self.frame.width * CONST.UI.FRAME.SIDE_MARGIN

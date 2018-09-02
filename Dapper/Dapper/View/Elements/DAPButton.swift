@@ -20,7 +20,7 @@ class DAPButton: UIButton {
         fatalError("Didn't ovveride aDecoder initializer")
     }
     
-    func setupView() {
+    private func setupView() {
         backgroundColor = CONST.UI.BUTTON.COLOR
         layer.borderColor = CONST.UI.BUTTON.BORDER_COLOR.cgColor
         layer.borderWidth = CONST.UI.BUTTON.BORDER_THICCC

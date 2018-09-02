@@ -7,7 +7,15 @@
 //
 
 import Foundation
+import UIKit
 
-class UIUtils {
-    
+class DAPUtils {
+    static func alert(title: String, message: String, buttonMessage: String, viewController: UIViewController) {
+        let alertController = UIAlertController(title: title,
+                                                message: message,
+                                                preferredStyle: .alert)
+        let retryAction = UIAlertAction(title: buttonMessage, style: .default, handler: nil)
+        alertController.addAction(retryAction)
+        viewController.present(alertController, animated: true, completion: nil)
+    }
 }

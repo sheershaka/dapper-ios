@@ -53,29 +53,29 @@ class DAPSignUpViewController: DAPViewController {
         
         // Check each field
         if username == "" {
-            errorMessage = "Please enter a username."
+            errorMessage = "Looks like your username is missing."
         }
         
         let phoneRegEx = "^\\d{10}$"
         if phone == "" {
-            errorMessage = "Please enter a phone number."
+            errorMessage = "Looks like your phone number is missing."
         } else if !NSPredicate(format: "SELF MATCHES %@", phoneRegEx).evaluate(with: phone) {
             errorMessage = "Please enter a valid 10 digit phone number."
         }
         
         let emailRegEx = "^(?:(?:(?:(?: )*(?:(?:(?:\\t| )*\\r\\n)?(?:\\t| )+))+(?: )*)|(?: )+)?(?:(?:(?:[-A-Za-z0-9!#$%&’*+/=?^_'{|}~]+(?:\\.[-A-Za-z0-9!#$%&’*+/=?^_'{|}~]+)*)|(?:\"(?:(?:(?:(?: )*(?:(?:[!#-Z^-~]|\\[|\\])|(?:\\\\(?:\\t|[ -~]))))+(?: )*)|(?: )+)\"))(?:@)(?:(?:(?:[A-Za-z0-9](?:[-A-Za-z0-9]{0,61}[A-Za-z0-9])?)(?:\\.[A-Za-z0-9](?:[-A-Za-z0-9]{0,61}[A-Za-z0-9])?)*)|(?:\\[(?:(?:(?:(?:(?:[0-9]|(?:[1-9][0-9])|(?:1[0-9][0-9])|(?:2[0-4][0-9])|(?:25[0-5]))\\.){3}(?:[0-9]|(?:[1-9][0-9])|(?:1[0-9][0-9])|(?:2[0-4][0-9])|(?:25[0-5]))))|(?:(?:(?: )*[!-Z^-~])*(?: )*)|(?:[Vv][0-9A-Fa-f]+\\.[-A-Za-z0-9._~!$&'()*+,;=:]+))\\])))(?:(?:(?:(?: )*(?:(?:(?:\\t| )*\\r\\n)?(?:\\t| )+))+(?: )*)|(?: )+)?$"
         if email == "" {
-            errorMessage = "Please enter an email."
+            errorMessage = "Looks like your email is missing."
         } else if !NSPredicate(format: "SELF MATCHES %@", emailRegEx).evaluate(with: email) {
             errorMessage = "Please enter a valid email."
         }
         
         if password == "" {
-            errorMessage = "Please enter a password."
+            errorMessage = "Looks like your password is missing."
         }
         
         if password2 == "" {
-            errorMessage = "Please confirm your password."
+            errorMessage = "Looks like your password is missing."
         }
         
         if password != password2 {
@@ -83,13 +83,7 @@ class DAPSignUpViewController: DAPViewController {
         }
         
         if errorMessage != "" {
-            let alertController = UIAlertController(title: "Sign up errors",
-                                                    message: errorMessage,
-                                                    preferredStyle: .alert)
-            let retryAction = UIAlertAction(title: "Retry", style: .default, handler: nil)
-            alertController.addAction(retryAction)
-            self.present(alertController, animated: true, completion: nil)
-            
+            DAPUtils.alert(title: "Woops", message: errorMessage, buttonMessage: "Retry", viewController: self)
             return
         }
         
@@ -100,12 +94,7 @@ class DAPSignUpViewController: DAPViewController {
             DispatchQueue.main.async {
                 if let error = task.error {
                     let nserror = error as! NSError
-                    let alertController = UIAlertController(title: nserror.userInfo["__type"] as? String,
-                                                            message: nserror.userInfo["message"] as? String,
-                                                            preferredStyle: .alert)
-                    let retryAction = UIAlertAction(title: "Retry", style: .default, handler: nil)
-                    alertController.addAction(retryAction)
-                    self.present(alertController, animated: true, completion: nil)
+                    DAPUtils.alert(title: nserror.userInfo["__type"] as! String, message: nserror.userInfo["message"] as! String, buttonMessage: "Retry", viewController: self)
                     
                 } else {
                     let response: AWSCognitoIdentityUserPoolSignUpResponse = task.result! as AWSCognitoIdentityUserPoolSignUpResponse

@@ -24,7 +24,10 @@ class DAPConfirmationViewController: DAPViewController {
         DAPView?.cancelButton.addTarget(self, action: #selector(self.cancelPressed(_:)), for: UIControlEvents.touchUpInside)
         
         self.view.addSubview(DAPView!)
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        DAPUtils.alert(title: "Please confirm your account", message: "Enter the confirmation code sent to your email.", buttonMessage: "Retry", viewController: self)
     }
     
     override func didReceiveMemoryWarning() {
@@ -39,12 +42,7 @@ class DAPConfirmationViewController: DAPViewController {
             DispatchQueue.main.async {
                 if let error = task.error {
                     let nserror = error as! NSError
-                    let alertController = UIAlertController(title: nserror.userInfo["__type"] as? String,
-                                                            message: nserror.userInfo["message"] as? String,
-                                                            preferredStyle: .alert)
-                    let retryAction = UIAlertAction(title: "Retry", style: .default, handler: nil)
-                    alertController.addAction(retryAction)
-                    self.present(alertController, animated: true, completion: nil)
+                    DAPUtils.alert(title: nserror.userInfo["__type"] as! String, message: nserror.userInfo["message"] as! String, buttonMessage: "Retry", viewController: self)
                     
                 } else {
                     // TODO present homescreen.

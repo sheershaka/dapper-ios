@@ -57,14 +57,15 @@ class DAPSignInViewController: DAPViewController {
         AWS.shared.currentUser?.getSession(username!, password: password!, validationData: nil).continueWith(block: { (task: AWSTask<AWSCognitoIdentityUserSession>) -> Any? in
             DispatchQueue.main.async {
                 if let error = task.error {
-                    // TODO Parse error for unconfirmed user, present the confirmation screen. 
+                    // TODO Parse error for unconfirmed user, present the confirmation screen.
                     let nserror = error as! NSError
-                    let alertController = UIAlertController(title: nserror.userInfo["__type"] as? String,
-                                                            message: nserror.userInfo["message"] as? String,
-                                                            preferredStyle: .alert)
-                    let retryAction = UIAlertAction(title: "Retry", style: .default, handler: nil)
-                    alertController.addAction(retryAction)
-                    self.present(alertController, animated: true, completion: nil)
+                    
+                    if nserror.userInfo["__type"] as? String == "UserNotConfirmedException" {
+                        let vc = DAPConfirmationViewController()
+                        self.present(vc, animated: true)
+                    }
+                    
+                    DAPUtils.alert(title: nserror.userInfo["__type"] as! String, message: nserror.userInfo["message"] as! String, buttonMessage: "Retry", viewController: self)
                     
                 } else {
                     // TODO present homescreen.

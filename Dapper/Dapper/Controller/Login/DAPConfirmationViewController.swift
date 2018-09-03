@@ -27,7 +27,7 @@ class DAPConfirmationViewController: DAPViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        DAPUtils.alert(title: "Please confirm your account", message: "Enter the confirmation code sent to your email.", buttonMessage: "Retry", viewController: self)
+        DAPUtils.alert(title: "", message: "Please enter the confirmation code sent to your email.", buttonMessage: "Ok", viewController: self)
     }
     
     override func didReceiveMemoryWarning() {
@@ -45,8 +45,8 @@ class DAPConfirmationViewController: DAPViewController {
                     DAPUtils.alert(title: nserror.userInfo["__type"] as! String, message: nserror.userInfo["message"] as! String, buttonMessage: "Retry", viewController: self)
                     
                 } else {
-                    // TODO present homescreen.
-                    print("user confirmed")
+                    let vc = DAPScheduleAppointmentViewController()
+                    self.present(vc, animated: true)
                 }
             }
         })

@@ -9,6 +9,7 @@ import AWSCore
 import AWSPinpoint
 import UIKit
 import AWSCognitoIdentityProvider
+import FBSDKCoreKit
 
 class DAPLandingViewController: DAPViewController {
     

@@ -70,6 +70,8 @@ class DAPSignInViewController: DAPViewController {
                 } else {
                     // TODO present homescreen.
                     print("user signed in")
+                    let homeVC = DAPScheduleAppointmentViewController()
+                    self.present(homeVC, animated: true, completion: nil)
                 }
             }
         })

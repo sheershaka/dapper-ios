@@ -12,12 +12,14 @@ import UIKit
 class DAPConfirmationView: _DAPLogoView {
     
     var confirmTextField: DAPTextField = DAPTextField()
+    var resendButton: DAPButton = DAPButton()
     var submitButton: DAPButton = DAPButton()
     var cancelButton: DAPButton = DAPButton()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupConfirmTextField()
+        setupResendButton()
         setupSubmitButton()
         setupCancelButton()
         addViews()
@@ -41,11 +43,22 @@ class DAPConfirmationView: _DAPLogoView {
         confirmTextField.placeholder = "Confirmation Code"
     }
     
-    private func setupSubmitButton() {
+    private func setupResendButton() {
         let width: CGFloat = self.frame.width * (1 - 2 * CONST.UI.FRAME.SIDE_MARGIN)
         let height: CGFloat = CONST.UI.BUTTON.HEIGHT
         let x: CGFloat = self.frame.width * CONST.UI.FRAME.SIDE_MARGIN
         let y: CGFloat = confirmTextField.frame.maxY + self.frame.height * CONST.UI.TEXT_FIELD.TEXT_FIELD_MARGIN
+        
+        resendButton.frame = CGRect(x: x, y: y, width: width, height: height)
+        
+        resendButton.setTitle("Resend Code", for: UIControlState.normal)
+    }
+    
+    private func setupSubmitButton() {
+        let width: CGFloat = self.frame.width * (1 - 2 * CONST.UI.FRAME.SIDE_MARGIN)
+        let height: CGFloat = CONST.UI.BUTTON.HEIGHT
+        let x: CGFloat = self.frame.width * CONST.UI.FRAME.SIDE_MARGIN
+        let y: CGFloat = resendButton.frame.maxY + self.frame.height * CONST.UI.TEXT_FIELD.TEXT_FIELD_MARGIN
         
         submitButton.frame = CGRect(x: x, y: y, width: width, height: height)
         
@@ -65,6 +78,7 @@ class DAPConfirmationView: _DAPLogoView {
     
     private func addViews() {
         addSubview(confirmTextField)
+        addSubview(resendButton)
         addSubview(submitButton)
         addSubview(cancelButton)
     }

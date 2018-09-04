@@ -31,7 +31,7 @@ class DAPForgotPasswordViewController: DAPViewController {
     }
     
     func submitPressed(_ sender: UITapGestureRecognizer) {
-        
+        AWS.shared.currentUser?.forgotPassword()
     }
     
     func cancelPressed(_ sender: UITapGestureRecognizer) {

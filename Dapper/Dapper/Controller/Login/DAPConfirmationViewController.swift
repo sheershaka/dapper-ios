@@ -14,12 +14,14 @@ import AWSCognitoIdentityProvider
 class DAPConfirmationViewController: DAPViewController {
     
     var DAPView: DAPConfirmationView?
+    var username: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         DAPView = DAPConfirmationView(frame: self.view.frame)
         
+        DAPView?.resendButton.addTarget(self, action: #selector(self.resendPressed(_:)), for: UIControlEvents.touchUpInside)
         DAPView?.submitButton.addTarget(self, action: #selector(self.submitPressed(_:)), for: UIControlEvents.touchUpInside)
         DAPView?.cancelButton.addTarget(self, action: #selector(self.cancelPressed(_:)), for: UIControlEvents.touchUpInside)
         
@@ -33,6 +35,11 @@ class DAPConfirmationViewController: DAPViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func resendPressed(_ sender: UITapGestureRecognizer) {
+        print("resending")
+        AWS.shared.currentUser?.resendConfirmationCode()
     }
     
     func submitPressed(_ sender: UITapGestureRecognizer) {

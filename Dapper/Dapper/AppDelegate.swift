@@ -36,13 +36,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
         var landingVC: DAPViewController = DAPLandingViewController()
-//        if (AWS.shared.pool?.currentUser()?.isSignedIn)! {
-//            landingVC = DAPScheduleAppointmentViewController()
-//            print(AWS.shared.pool?.currentUser()?.username)
-//        }
-//        if FBSDKAccessToken.currentAccessTokenIsActive() {
-//            landingVC = DAPScheduleAppointmentViewController()
-//        }
+        // Comment these two sections out to not automatically log an already logged in user.
+        if (AWS.shared.pool?.currentUser()?.isSignedIn)! {
+            landingVC = DAPScheduleAppointmentViewController()
+            print(AWS.shared.pool?.currentUser()?.username)
+        }
+        if FBSDKAccessToken.currentAccessTokenIsActive() {
+            landingVC = DAPScheduleAppointmentViewController()
+        }
         
         self.window?.rootViewController = landingVC
         self.window?.makeKeyAndVisible()

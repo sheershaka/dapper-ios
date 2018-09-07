@@ -29,6 +29,13 @@ class DAPLandingViewController: DAPViewController {
         self.view.addSubview(DAPView!)
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if FBSDKAccessToken.currentAccessTokenIsActive() {
+            let landingVC = DAPScheduleAppointmentViewController()
+            present(landingVC, animated: true, completion: nil)
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -26,6 +26,24 @@ PODS:
   - Bolts/AppLinks (1.9.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.9.0)
+  - Braintree/Card (4.17.0):
+    - Braintree/Core
+  - Braintree/Core (4.17.0)
+  - Braintree/PaymentFlow (4.17.0):
+    - Braintree/Card
+    - Braintree/Core
+  - Braintree/UnionPay (4.17.0):
+    - Braintree/Card
+    - Braintree/Core
+  - BraintreeDropIn (6.4.0):
+    - BraintreeDropIn/DropIn (= 6.4.0)
+  - BraintreeDropIn/DropIn (6.4.0):
+    - Braintree/Card (~> 4.17)
+    - Braintree/Core (~> 4.17)
+    - Braintree/PaymentFlow (~> 4.17)
+    - Braintree/UnionPay (~> 4.17)
+    - BraintreeDropIn/UIKit
+  - BraintreeDropIn/UIKit (6.4.0)
   - FacebookCore (0.3.2):
     - Bolts (~> 1.8)
     - FBSDKCoreKit (~> 4.35)
@@ -65,6 +83,7 @@ DEPENDENCIES:
   - AWSMobileClient (~> 2.6.13)
   - AWSPinpoint (~> 2.6.13)
   - AWSUserPoolsSignIn (~> 2.6.13)
+  - BraintreeDropIn
   - FacebookCore
   - FacebookLogin
   - GoogleSignIn (~> 4.0)
@@ -81,6 +100,8 @@ SPEC REPOS:
     - AWSPinpoint
     - AWSUserPoolsSignIn
     - Bolts
+    - Braintree
+    - BraintreeDropIn
     - FacebookCore
     - FacebookLogin
     - FBSDKCoreKit
@@ -101,6 +122,8 @@ SPEC CHECKSUMS:
   AWSPinpoint: c7c985dc5242c3fd716aa0a099ce7ba2a535fc5a
   AWSUserPoolsSignIn: dfc849bcd5f965248ec8bb11c37e640bede7e377
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  Braintree: 9681cef8240c8ad9e67493d5c19418041e6c259a
+  BraintreeDropIn: b430d90d77bf7b8c40d51f2ba3b6bf18fe285202
   FacebookCore: fe93222bb70346730ef33b061d493e9e7a7cb1f5
   FacebookLogin: a4e225974791c82836765a294582b4778baffc07
   FBSDKCoreKit: 1a5b2e3ceb5ca827a53c54aa5f4a3480efff80d2
@@ -110,6 +133,6 @@ SPEC CHECKSUMS:
   GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
   GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
 
-PODFILE CHECKSUM: 438168027567fe30e3b2824060343a166d511a92
+PODFILE CHECKSUM: 3bc6634b1bdbb32dbd181cbc559f8757d3e8f8b5
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.5.3
